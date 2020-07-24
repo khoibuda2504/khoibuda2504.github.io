@@ -63,6 +63,10 @@ p {
 #container {
     display:none;
 }
+.fixHireMe {
+        background-color: white;
+ 
+    }
  @media only screen and (min-width: 768px) {
      /* For desktop: */
     #mobile {
