@@ -134,11 +134,13 @@ p {
         color: #ddd;
         text-decoration: none;
     }
+    .button {
+        display: block;
+    }
     .fixHireMe {
+        background-color: var(--color1);
         max-width: 1200px;
         margin: 0 auto;
     }
-
-
-
-
+ }
+   
