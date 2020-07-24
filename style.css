@@ -134,6 +134,10 @@ p {
         color: #ddd;
         text-decoration: none;
     }
+    .fixHireMe {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
 
 
