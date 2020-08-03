@@ -1,0 +1,267 @@
+* {
+    box-sizing: boder-box;
+}
+
+body {
+    font-family: "Jost", serif;
+}
+
+.site-navbar {
+    margin-bottom: 0;
+    z-index: 1999;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    margin: auto;
+    font-size: 20px;
+}
+
+.product a,
+.product a:hover {
+    text-decoration: none!important;
+    color: #111111;
+}
+
+.site-navbar a:hover {
+    transform: scale(1.1);
+    color: #f26200!important;
+}
+
+.font-logo {
+    font-size: 30px;
+}
+
+.bg-beauty {
+    background-color: #ffffdd;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.7) !important
+}
+
+.cover {
+    background-color: #ffffdd;
+    height: 900px;
+}
+
+.btn-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f26200;
+}
+
+.card-people {
+    height: 350px;
+    width: 100%;
+}
+
+.card-people-men {
+    background-image: url(images/for-men.jpg);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+
+.card-people-men:hover {
+    transform: scale(1.1)
+}
+
+.card-people-women {
+    background-image: url(images/for-women.jpg);
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+
+.card-people-women:hover {
+    transform: scale(1.1)
+}
+
+.active,
+.footer a {
+    color: #f26200!important;
+}
+
+.footer-info a {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.side-bar-detail {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.side-bar-detail-reverse {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+.side-bar-item:hover>.side-bar-detail,
+.side-bar-item:hover>.side-bar-detail-reverse {
+    display: block;
+}
+
+.list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.list-unstyled li a {
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.side-bar-hr-lg {
+    width: 50%;
+    margin-left: 0;
+    font-size: 30px;
+    background-color: brown;
+}
+
+.side-bar-hr {
+    width: 70%;
+    margin-left: 0;
+}
+
+.pagination a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #111111;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+
+.insta-item {
+    height: 320px;
+    z-index: 1;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.insta-text {
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all, 0.3s;
+}
+
+.insta-text i {
+    font-size: 30px;
+    color: #0d0d0d;
+}
+
+.insta-text a {
+    font-size: 20px;
+    color: #0d0d0d;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
+
+.insta-item:hover>.insta-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.insta-item:hover:after {
+    opacity: 1;
+}
+
+.insta-item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: "";
+    opacity: 0;
+    z-index: -1;
+    transition: all, 0.3s;
+}
+
+.product-detail-price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ca1515;
+    margin-bottom: 30px;
+}
+
+.btn-cart {
+    font-size: 16px;
+    background: #ca1515;
+    padding: 14px 30px 15px;
+    border-radius: 50px;
+}
+
+.card-text p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ca1515;
+}
+
+.checkout-input p {
+    color: #444444;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.checkout-input input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.btn-red {
+    font-size: 18px;
+    background: #ca1515;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+.contact-info h5 {
+    color: #111111;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.contact-info i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.contact-info h6,
+.contact-info p {
+    color: #111111;
+    font-size: 20px;
+}
+
+.footer-about p,
+.footer-info a,
+.footer-copyright a {
+    font-size: 18px;
+}
