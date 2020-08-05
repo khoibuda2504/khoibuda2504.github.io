@@ -1,20 +1,38 @@
-* {
-    box-sizing: boder-box;
-}
-
 body {
     font-family: "Jost", serif;
 }
 
-.site-navbar {
-    margin-bottom: 0;
-    z-index: 1999;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
-    position: absolute;
-    margin: auto;
+.bg-nav {
+    background-color: #ffffdd;
     font-size: 20px;
+    padding: 1rem;
+}
+
+.tip {
+    position: absolute;
+    right: -12px;
+    top: -11px;
+    height: 18px;
+    width: 18px;
+    background: #111111;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.sup {
+    display: inline-block;
+    position: absolute;
+    background: #f26200;
+    color: #ffffdd;
+    width: 18px;
+    font-size: 15px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 50%;
 }
 
 .product a,
@@ -23,9 +41,10 @@ body {
     color: #111111;
 }
 
-.site-navbar a:hover {
-    transform: scale(1.1);
+.bg-nav a:hover {
+    transform: scale(1.2);
     color: #f26200!important;
+    text-decoration: none;
 }
 
 .font-logo {
@@ -40,6 +59,13 @@ body {
     color: rgba(0, 0, 0, 0.7) !important
 }
 
+.option-hover {
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    text-align: center;
+}
+
 .cover {
     background-color: #ffffdd;
     height: 900px;
@@ -47,10 +73,19 @@ body {
 
 .btn-icon {
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffdd;
+}
+
+.btn-play {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #f26200;
+    color: #ffffdd;
 }
 
 .card-people {
@@ -92,25 +127,6 @@ body {
 .footer-info a {
     margin-bottom: 12px;
     font-size: 16px;
-}
-
-.side-bar-detail {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: none;
-}
-
-.side-bar-detail-reverse {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: none;
-}
-
-.side-bar-item:hover>.side-bar-detail,
-.side-bar-item:hover>.side-bar-detail-reverse {
-    display: block;
 }
 
 .list-unstyled li {
@@ -178,15 +194,6 @@ body {
     margin-top: 10px;
 }
 
-.insta-item:hover>.insta-text {
-    opacity: 1;
-    visibility: visible;
-}
-
-.insta-item:hover:after {
-    opacity: 1;
-}
-
 .insta-item:after {
     position: absolute;
     left: 0;
@@ -198,6 +205,15 @@ body {
     opacity: 0;
     z-index: -1;
     transition: all, 0.3s;
+}
+
+.insta-item:hover>.insta-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.insta-item:hover:after {
+    opacity: 1;
 }
 
 .product-detail-price {
@@ -264,4 +280,47 @@ body {
 .footer-info a,
 .footer-copyright a {
     font-size: 18px;
+}
+
+.btn-floating i:hover {
+    transform: scale(1.1);
+}
+
+.subNav {
+    display: none;
+    position: absolute;
+    color: #f26200;
+    background: #ffffdd;
+    padding: 0px;
+}
+
+.sub1Nav {
+    display: none;
+    position: absolute;
+    color: #f26200;
+    background: #ffffdd;
+    padding: 0px;
+    left: 100%;
+    top: 0;
+    width: 120px;
+    z-index: 1;
+}
+
+.mainNav:hover>.subNav {
+    display: block;
+}
+
+.subNav li:hover>.sub1Nav {
+    display: block;
+}
+
+.add-to-card {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    display: none;
+}
+
+.card:hover>.add-to-card {
+    display: block;
 }

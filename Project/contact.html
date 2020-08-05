@@ -20,48 +20,89 @@
 </head>
 
 
-<nav class="container-fluid navbar navbar-expand-lg site-navbar">
+<nav class="container-fluid navbar navbar-expand-lg bg-nav fixed-top">
     <div class="container">
         <a href="index.html" class="font-weight-bold text-primary font-logo"> VEERA </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars text text-center-primary pt-1"></i></span>
-            </button>
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul class="navbar-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars text-primary pt-1"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item text-center">
                     <a class="nav-link " href="index.html">HOME</a>
                 </li>
                 <li class="nav-item text-center">
                     <a class="nav-link" href="index.html">ABOUT</a>
                 </li>
-                <li class="nav-item text-center">
-                    <a class="nav-link" href="cate.html">PRODUCT</a>
+                <li class="nav-item text-center mainNav position-relative">
+                    <a class="nav-link" href="cate.html">PRODUCT <i class="fas fa-angle-down"></i></a>
+                    <ul class="subNav">
+                        <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">MEN <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav">
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">COATS</a> </li>
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">JACKETS</a></li>
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">SHIRTS</a></li>
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">JEANS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class=" nav-link " href="detail.html">WOMEN <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">COATS</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JACKETS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">SHIRTS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JEANS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class="nav-link " href="# ">KID <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">COATS</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JACKETS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">SHIRTS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JEANS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class="nav-link " href="detail.html">ACC <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">SUNGLASS</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">NECKLACE</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">WATCH</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">TIE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class="nav-link " href="detail.html">COS <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">PRIMER</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">EYESHADOW</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">EYELINER</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item text-center">
-                    <a class="nav-link" href="checkout.html">CHECK OUT</a>
+                <li class="nav-item text-center ">
+                    <a class="nav-link " href="checkout.html ">CHECK OUT</a>
                 </li>
-                <li class="nav-item text-center">
-                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                <li class="nav-item text-center ">
+                    <a class="nav-link active" href="contact.html ">CONTACT</a>
                 </li>
             </ul>
+            <p class=" d-flex justify-content-center align-items-center ">
+                <a class=" btn btn-icon d-flex justify-content-center align-items-center mx-1 ">
+                    <i class="fas fa-search text-primary ">
+                    </i>
+                </a>
+                <a class="btn btn-icon d-flex justify-content-center align-items-center mx-1 ">
+                    <i class="far fa-heart text-primary position-relative "><sup class="sup ">2</sup></i>
+                </a>
+                <a href="checkout.html" class="btn btn-icon d-flex justify-content-center align-items-center mx-1 ">
+                    <i class="fas fa-shopping-cart text-primary position-relative "><sup class="sup ">2</sup></i>
+                </a>
+            </p>
         </div>
     </div>
 </nav>
 <div class="container-fluid cover d-flex justify-content-center align-items-center">
-    <div>
-        <h1 class="text text-primary display-4">CONTACT US</h1>
-        <p class="pt-5 d-flex justify-content-between align-items-center">
-            <a class="btn btn-icon d-flex justify-content-center align-items-center ">
-                <i class="fas fa-search "></i>
-            </a>
-            <a class="btn btn-icon d-flex justify-content-center align-items-center ">
-                <i class="far fa-heart "></i>
-            </a>
-            <a class="btn btn-icon d-flex justify-content-center align-items-center ">
-                <i class="fas fa-shopping-bag "></i>
-            </a>
-        </p>
-    </div>
+
+    <h1 class="text text-primary display-4">CONTACT US</h1>
 </div>
 <div class="container mt-5">
     <div class="row">
@@ -92,9 +133,9 @@
             <button class="btn-red text-white font-weight-bold border-0">SEND MESSAGE</button>
         </div>
         <div class="col-md-6">
-            <div class="contact-map">
+            <div class="contact-map d-xs-none">
                 <iframe class=" border-0 " src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7839.667740728795!2d106.72036887644678!3d10.74728386002962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMzVrIGtodSBwaOG7kSA1IHBoxrDhu51uZyB0w6JuIHRodeG6rW4gdMOieQ!5e0!3m2!1sen!2s!4v1596470300354!5m2!1sen!2s"
-                    width="700" height="620" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    width="100%" height="620" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
@@ -102,7 +143,7 @@
 <div class="slide-item container-fluid my-5 ">
     <h1 class="text-center my-5 ">SALE OFF VIA INSTAGRAM</h1>
     <div class="row ">
-        <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 px-0 py-0 ">
             <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item1.jpg); ">
                 <div class="insta-text ">
                     <i class="fab fa-instagram "></i><br>
@@ -111,7 +152,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 px-0 py-0 ">
             <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item2.jpg); ">
                 <div class="insta-text ">
                     <i class="fab fa-instagram "></i><br>
@@ -120,7 +161,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 px-0 py-0 ">
             <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item3.jpg); ">
                 <div class="insta-text ">
                     <i class="fab fa-instagram "></i><br>
@@ -129,7 +170,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 px-0 py-0 ">
             <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item4.jpg); ">
                 <div class="insta-text ">
                     <i class="fab fa-instagram "></i><br>
@@ -138,7 +179,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 px-0 py-0 ">
             <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item5.jpg); ">
                 <div class="insta-text ">
                     <i class="fab fa-instagram "></i><br>
@@ -147,7 +188,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 px-0 py-0 ">
             <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item6.jpg); ">
                 <div class="insta-text ">
                     <i class="fab fa-instagram "></i><br>
@@ -162,7 +203,7 @@
     <div class="container ">
         <div class="row ">
             <div class="col-md-6 ">
-                <div class="footer-about text-primary ">
+                <div class="footer-about text-primary text-center">
                     <h1>veeraStore</h1>
                     <p>
                         Lorem ipsum dolor sit.
@@ -171,36 +212,35 @@
             </div>
             <div class="col-md-3 footer-info ">
                 <ul class="list-unstyled ">
-                    <li>
-                        <a href="# ">Contact Us</a>
+                    <li class="text-center">
+                        <a href="contact.html">Contact Us</a>
                     </li>
-                    <li>
-                        <a href="# ">veerastore@gmail.com</a>
+                    <li class="text-center">
+                        <a href="mailto:veerastore@gmail.com">veerastore@gmail.com</a>
                     </li>
-                    <li>
-                        <a href="# ">0909.999.899</a>
+                    <li class="text-center">
+                        <a href="callto: 09099999899 ">0909.999.899</a>
                     </li>
-                    <li>
-                        <a href="# ">Support</a>
+                    <li class="text-center">
+                        <a href="contact.html ">Support</a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-3 footer-info ">
                 <ul class="list-unstyled ">
-                    <li>
-                        <a href="# ">Home</a>
+                    <li class="text-center">
+                        <a href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="# ">Blog</a>
+                    <li class="text-center">
+                        <a href="#">Blog</a>
                     </li>
-                    <li>
-                        <a href="# ">Services</a>
+                    <li class="text-center">
+                        <a href="#">Services</a>
                     </li>
-                    <li>
-                        <a href="# ">About Us</a>
+                    <li class="text-center">
+                        <a href="#">About Us</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </div>

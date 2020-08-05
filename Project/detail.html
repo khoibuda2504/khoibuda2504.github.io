@@ -20,48 +20,89 @@
 </head>
 
 
-<nav class="container-fluid navbar navbar-expand-lg site-navbar">
+<nav class="container-fluid navbar navbar-expand-lg bg-nav fixed-top">
     <div class="container">
         <a href="index.html" class="font-weight-bold text-primary font-logo"> VEERA </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars text text-center-primary pt-1"></i></span>
-            </button>
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul class="navbar-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars text-primary pt-1"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item text-center">
-                    <a class="nav-link " href="#">HOME</a>
+                    <a class="nav-link " href="index.html">HOME</a>
                 </li>
                 <li class="nav-item text-center">
-                    <a class="nav-link" href="#about">ABOUT</a>
+                    <a class="nav-link" href="index.html">ABOUT</a>
                 </li>
-                <li class="nav-item text-center">
-                    <a class="nav-link active" href="cate.html">PRODUCT</a>
+                <li class="nav-item text-center mainNav position-relative">
+                    <a class="nav-link active" href="cate.html">PRODUCT <i class="fas fa-angle-down"></i></a>
+                    <ul class="subNav">
+                        <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">MEN <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav">
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">COATS</a> </li>
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">JACKETS</a></li>
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">SHIRTS</a></li>
+                                <li class="nav-item list-unstyled"><a class="nav-link" href="detail.html">JEANS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class=" nav-link " href="detail.html">WOMEN <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">COATS</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JACKETS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">SHIRTS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JEANS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class="nav-link " href="# ">KID <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">COATS</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JACKETS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">SHIRTS</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">JEANS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class="nav-link " href="detail.html">ACC <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">SUNGLASS</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">NECKLACE</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">WATCH</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">TIE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-unstyled position-relative"><a class="nav-link " href="detail.html">COS <i class="fas fa-angle-right"></i></a>
+                            <ul class="sub1Nav ">
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">PRIMER</a> </li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">EYESHADOW</a></li>
+                                <li class="nav-item list-unstyled "><a class="nav-link " href="detail.html">EYELINER</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item text-center">
-                    <a class="nav-link" href="checkout.html">CHECK OUT</a>
+                <li class="nav-item text-center ">
+                    <a class="nav-link " href="checkout.html ">CHECK OUT</a>
                 </li>
-                <li class="nav-item text-center">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
+                <li class="nav-item text-center ">
+                    <a class="nav-link " href="contact.html ">CONTACT</a>
                 </li>
             </ul>
+            <p class=" d-flex justify-content-center align-items-center ">
+                <a class=" btn btn-icon d-flex justify-content-center align-items-center mx-1 ">
+                    <i class="fas fa-search text-primary ">
+                    </i>
+                </a>
+                <a class="btn btn-icon d-flex justify-content-center align-items-center mx-1 ">
+                    <i class="far fa-heart text-primary position-relative "><sup class="sup ">2</sup></i>
+                </a>
+                <a href="detail.html" class="btn btn-icon d-flex justify-content-center align-items-center mx-1 ">
+                    <i class="fas fa-shopping-cart text-primary position-relative "><sup class="sup ">2</sup></i>
+                </a>
+            </p>
         </div>
     </div>
 </nav>
 <div class="container-fluid cover d-flex justify-content-center align-items-center">
-    <div>
-        <h1 class="text text-primary display-4">PRODUCT DETAILS</h1>
-        <p class="pt-5 d-flex justify-content-between align-items-center">
-            <a class="btn btn-icon d-flex justify-content-center align-items-center ">
-                <i class="fas fa-search "></i>
-            </a>
-            <a class="btn btn-icon d-flex justify-content-center align-items-center ">
-                <i class="far fa-heart "></i>
-            </a>
-            <a class="btn btn-icon d-flex justify-content-center align-items-center ">
-                <i class="fas fa-shopping-bag "></i>
-            </a>
-        </p>
-    </div>
+    <h1 class="text text-primary display-4">PRODUCT DETAILS</h1>
+
 </div>
 
 <div class="container mt-5">
@@ -86,7 +127,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas reprehenderit dignissimos! Fuga obcaecati sequi, repudiandae quasi animi ex quas ea nobis at temporibus impedit numquam itaque eum voluptatibus minus!</p>
             <div class="product-detail-button mt-5 text-center">
-                <a href="#" class="btn-cart text-white font-weight-bold"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                <a href="checkout.html" class="btn-cart text-white font-weight-bold"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
             </div>
         </div>
     </div>
@@ -94,157 +135,176 @@
 <hr class="text-center mt-5" style="width: 30%;">
 <div class="container">
     <h1 class="text-center my-5">RELATED PRODUCTS</h1>
-    <div class="row">
+    <div class="row product">
+
         <div class="col-lg-3 col-md-6">
-            <div class="card ">
-                <img src="images/items1.jpg " alt="hulk " class="img-fluid ">
-                <div class="card-text text-center pt-2">
-                    Lorem ipsum dolor sit.
-                    <p class="text text-center-danger ">$100</p>
+            <a href="detail.html">
+                <div class="card">
+                    <img src="images/items1.jpg " alt="items1" class="img-fluid">
+                    <div class="card-text text-center">
+                        <h4>Lorem ipsum dolor sit.</h4>
+                        <p class="text-danger ">$100</p>
+                    </div>
+                    <div class="add-to-card">
+                        <a href="checkout.html" class="btn-cart text-white font-weight-bold"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
+
         <div class="col-lg-3 col-md-6">
-            <div class="card ">
-                <img src="images/items3.jpg " alt="hulk " class="img-fluid ">
-                <div class="card-text text-center pt-2">
-                    Lorem ipsum dolor sit.
-                    <p class="text text-center-danger ">$100</p>
+            <a href="detail.html">
+                <div class="card">
+                    <img src="images/items3.jpg " alt="items3" class="img-fluid">
+                    <div class="card-text text-center">
+                        <h4>Lorem ipsum dolor sit.</h4>
+                        <p class="text-danger ">$100</p>
+                    </div>
+                    <div class="add-to-card">
+                        <a href="checkout.html" class="btn-cart text-white font-weight-bold"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="card ">
-                <img src="images/items2.jpg " alt="hulk " class="img-fluid ">
-                <div class="card-text text-center pt-2">
-                    Lorem ipsum dolor sit.
-                    <p class="text text-center-danger ">$100</p>
+
+        <div class="col-lg-3 col-md-6 ">
+            <a href="detail.html">
+                <div class="card">
+                    <img src="images/items2.jpg " alt="items2" class="img-fluid">
+                    <div class="card-text text-center">
+                        <h4>Lorem ipsum dolor sit.</h4>
+                        <p class="text-danger ">$100</p>
+                    </div>
+                    <div class="add-to-card">
+                        <a href="checkout.html" class="btn-cart text-white font-weight-bold"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="card ">
-                <img src="images/items4.jpg " alt="hulk " class="img-fluid ">
-                <div class="card-text text-center pt-2">
-                    Lorem ipsum dolor sit.
-                    <p class="text text-center-danger ">$100</p>
+
+        <div class="col-lg-3 col-md-6 ">
+            <a href="detail.html">
+                <div class="card">
+                    <img src="images/items4.jpg " alt="items4" class="img-fluid">
+                    <div class="card-text text-center">
+                        <h4>Lorem ipsum dolor sit.</h4>
+                        <p class="text-danger ">$100</p>
+                    </div>
+                    <div class="add-to-card">
+                        <a href="checkout.html" class="btn-cart text-white font-weight-bold"><i class="fas fa-shopping-cart"></i> ADD TO CART</a>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
+
     </div>
 </div>
 <div class="slide-item container-fluid my-5 ">
-    <h1 class="text-center my-5">SALE OFF VIA INSTAGRAM</h1>
+    <h1 class="text-center my-5 ">SALE OFF VIA INSTAGRAM</h1>
     <div class="row ">
         <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
-            <div class="insta-item position-relative d-flex justify-content-center align-items-center
-             set-bg" style="background-image: url(images/slide-item1.jpg);">
-                <div class="insta-text">
-                    <i class="fab fa-instagram"></i><br>
-                    <a href="#"> @veeraStore</a>
+            <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item1.jpg); ">
+                <div class="insta-text ">
+                    <i class="fab fa-instagram "></i><br>
+                    <a href="# "> @veeraStore</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
-            <div class="insta-item position-relative d-flex justify-content-center align-items-center
-             set-bg" style="background-image: url(images/slide-item2.jpg);">
-                <div class="insta-text">
-                    <i class="fab fa-instagram"></i><br>
-                    <a href="#"> @veeraStore</a>
+            <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item2.jpg); ">
+                <div class="insta-text ">
+                    <i class="fab fa-instagram "></i><br>
+                    <a href="# "> @veeraStore</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
-            <div class="insta-item position-relative d-flex justify-content-center align-items-center
-             set-bg" style="background-image: url(images/slide-item3.jpg);">
-                <div class="insta-text">
-                    <i class="fab fa-instagram"></i><br>
-                    <a href="#"> @veeraStore</a>
+            <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item3.jpg); ">
+                <div class="insta-text ">
+                    <i class="fab fa-instagram "></i><br>
+                    <a href="# "> @veeraStore</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
-            <div class="insta-item position-relative d-flex justify-content-center align-items-center
-             set-bg" style="background-image: url(images/slide-item4.jpg);">
-                <div class="insta-text">
-                    <i class="fab fa-instagram"></i><br>
-                    <a href="#"> @veeraStore</a>
+            <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item4.jpg); ">
+                <div class="insta-text ">
+                    <i class="fab fa-instagram "></i><br>
+                    <a href="# "> @veeraStore</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
-            <div class="insta-item position-relative d-flex justify-content-center align-items-center
-             set-bg" style="background-image: url(images/slide-item5.jpg);">
-                <div class="insta-text">
-                    <i class="fab fa-instagram"></i><br>
-                    <a href="#"> @veeraStore</a>
+            <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item5.jpg); ">
+                <div class="insta-text ">
+                    <i class="fab fa-instagram "></i><br>
+                    <a href="# "> @veeraStore</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-2 col-md-4 col-sm-4 px-0 py-0 ">
-            <div class="insta-item position-relative d-flex justify-content-center align-items-center
-             set-bg" style="background-image: url(images/slide-item6.jpg);">
-                <div class="insta-text">
-                    <i class="fab fa-instagram"></i><br>
-                    <a href="#"> @veeraStore</a>
+            <div class="insta-item position-relative d-flex justify-content-center align-items-center set-bg " style="background-image: url(images/slide-item6.jpg); ">
+                <div class="insta-text ">
+                    <i class="fab fa-instagram "></i><br>
+                    <a href="# "> @veeraStore</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Footer -->
-<footer class="footer bg-beauty">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="footer-about text-primary">
+<footer class="footer bg-beauty ">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-6 ">
+                <div class="footer-about text-primary text-center>
                     <h1>veeraStore</h1>
                     <p>
                         Lorem ipsum dolor sit.
                     </p>
                 </div>
             </div>
-            <div class="col-md-3 footer-info">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Contact Us</a>
+            <div class=" col-md-3 footer-info ">
+                <ul class="list-unstyled ">
+                    <li class="text-center ">
+                        <a href="contact.html ">Contact Us</a>
                     </li>
-                    <li>
-                        <a href="#">veerastore@gmail.com</a>
+                    <li class="text-center ">
+                        <a href="mailto:veerastore@gmail.com ">veerastore@gmail.com</a>
                     </li>
-                    <li>
-                        <a href="#">0909.999.899</a>
+                    <li class="text-center ">
+                        <a href="callto: 09099999899 ">0909.999.899</a>
                     </li>
-                    <li>
-                        <a href="#">Support</a>
+                    <li class="text-center ">
+                        <a href="contact.html ">Support</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-3 footer-info">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Home</a>
+            <div class="col-md-3 footer-info ">
+                <ul class="list-unstyled ">
+                    <li class="text-center ">
+                        <a href="index.html ">Home</a>
                     </li>
-                    <li>
-                        <a href="#">Blog</a>
+                    <li class="text-center ">
+                        <a href="# ">Blog</a>
                     </li>
-                    <li>
-                        <a href="#">Services</a>
+                    <li class="text-center ">
+                        <a href="# ">Services</a>
                     </li>
-                    <li>
-                        <a href="#">About Us</a>
+                    <li class="text-center ">
+                        <a href="# ">About Us</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </div>
-    <ul class="list-unstyled list-inline text-center">
+    </div>
+    <ul class="list-unstyled list-inline text-center ">
         <li class=" list-inline-item ">
             <a class="btn-floating btn-fb mx-1 ">
                 <i class="fab fa-facebook-f "> </i>
@@ -271,7 +331,7 @@
             </a>
         </li>
     </ul>
-    <div class="footer-copyright py-3 text-center">© 2020 Copyright:
+    <div class="footer-copyright py-3 text-center ">© 2020 Copyright:
         <a href="https://mdbootstrap.com/ "> veeraStore.vn</a>
     </div>
 </footer>
