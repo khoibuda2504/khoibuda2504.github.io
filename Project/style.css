@@ -2,26 +2,90 @@ body {
     font-family: "Jost", serif;
 }
 
+
+/* BACKGROUND NAVIGATION */
+
 .bg-nav {
     background-color: #ffffdd;
     font-size: 20px;
     padding: 1rem;
 }
 
-.tip {
-    position: absolute;
-    right: -12px;
-    top: -11px;
-    height: 18px;
-    width: 18px;
-    background: #111111;
-    font-size: 10px;
-    font-weight: 500;
-    color: #ffffff;
-    line-height: 18px;
-    text-align: center;
-    border-radius: 50%;
+
+/* BACKGROUND NAVIGATION */
+
+
+/* FONT LOGO ON NAVIGATION */
+
+.font-logo {
+    font-size: 30px;
 }
+
+
+/* FONT LOGO ON NAVIGATION */
+
+
+/* EFFECT ON NAVIGATION */
+
+.bg-nav a:hover {
+    transform: scale(1.2);
+    color: #f26200!important;
+    text-decoration: none;
+}
+
+
+/* EFFECT ON NAVIGATION */
+
+
+/* MULTI-LEVEL NAVIGATION*/
+
+.subNav {
+    display: none;
+    position: absolute;
+    color: #f26200;
+    background: #ffffdd;
+    padding: 0px;
+}
+
+.sub1Nav {
+    display: none;
+    position: absolute;
+    color: #f26200;
+    background: #ffffdd;
+    padding: 0px;
+    left: 100%;
+    top: 0;
+    width: 120px;
+    z-index: 1;
+}
+
+.mainNav:hover>.subNav {
+    display: block;
+}
+
+.subNav li:hover>.sub1Nav {
+    display: block;
+}
+
+
+/* MULTI-LEVEL NAVIGATION*/
+
+
+/*ICON ON NAVIGATION */
+
+.btn-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffdd;
+}
+
+
+/*ICON ON NAVIGATION */
+
+
+/* SMALL NUMBER ON ICON */
 
 .sup {
     display: inline-block;
@@ -35,49 +99,42 @@ body {
     border-radius: 50%;
 }
 
-.product a,
-.product a:hover {
-    text-decoration: none!important;
-    color: #111111;
-}
 
-.bg-nav a:hover {
-    transform: scale(1.2);
-    color: #f26200!important;
-    text-decoration: none;
-}
+/* SMALL NUMBER ON ICON */
 
-.font-logo {
-    font-size: 30px;
-}
+
+/*SET MAIN BACKGROUND ON*/
 
 .bg-beauty {
     background-color: #ffffdd;
 }
 
+
+/*SET MAIN BACKGROUND */
+
+
+/*SET BEAUTY COLOR  ON NAVIGATION */
+
 .nav-link {
     color: rgba(0, 0, 0, 0.7) !important
 }
 
-.option-hover {
-    position: absolute;
-    left: 0;
-    bottom: 30%;
-    text-align: center;
-}
+
+/*SET BEAUTY COLOR  ON NAVIGATION */
+
+
+/*SET COLOR & HEIGHT FOR COVER */
 
 .cover {
     background-color: #ffffdd;
     height: 900px;
 }
 
-.btn-icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ffffdd;
-}
+
+/*SET COLOR & HEIGHT FOR COVER */
+
+
+/*ICON IN COVER */
 
 .btn-play {
     display: inline-block;
@@ -87,6 +144,12 @@ body {
     background: #f26200;
     color: #ffffdd;
 }
+
+
+/*ICON IN COVER */
+
+
+/*SET CARD PEOPLE - MEN -WOMEN */
 
 .card-people {
     height: 350px;
@@ -102,7 +165,8 @@ body {
     transition: all 0.5s ease;
 }
 
-.card-people-men:hover {
+.card-people-men:hover,
+.card-people-women:hover {
     transform: scale(1.1)
 }
 
@@ -115,28 +179,22 @@ body {
     transition: all 0.5s ease;
 }
 
-.card-people-women:hover {
-    transform: scale(1.1)
-}
+
+/*SET CARD PEOPLE - MEN -WOMEN */
+
+
+/*SET COLOR ON ACTIVE NAVIGATION & FOOTER */
 
 .active,
 .footer a {
     color: #f26200!important;
 }
 
-.footer-info a {
-    margin-bottom: 12px;
-    font-size: 16px;
-}
 
-.list-unstyled li {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
+/*SET COLOR ON ACTIVE NAVIGATION & FOOTER */
 
-.list-unstyled li a {
-    color: rgba(0, 0, 0, 0.7)
-}
+
+/*HR ON CATE.HTML */
 
 .side-bar-hr-lg {
     width: 50%;
@@ -150,6 +208,74 @@ body {
     margin-left: 0;
 }
 
+
+/*HR ON CATE.HTML */
+
+
+/* SET BLACK COLOR & TEXT-DECOR:NONE ON PRODUCT*/
+
+.product a,
+.product a:hover {
+    text-decoration: none!important;
+    color: #111111;
+}
+
+
+/* SET BLACK COLOR & TEXT-DECOR:NONE ON PRODUCT*/
+
+
+/* PRODUCT PRICE*/
+
+.card-text p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ca1515;
+}
+
+
+/* PRODUCT PRICE*/
+
+
+/* HOVER ON PRODUCT*/
+
+.card:hover>.card-body h5 {
+    color: red;
+}
+
+
+/* HOVER ON PRODUCT*/
+
+
+/* BUTTON BELOW PRODUCT */
+
+.btn-cart {
+    font-size: 14px;
+    background: #dc3545;
+    padding: 14px 30px 15px;
+    border-radius: 50px;
+}
+
+
+/* BUTTON BELOW PRODUCT */
+
+
+/* EXPAND OPTION CATEGORIES*/
+
+.list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.list-unstyled li a {
+    color: rgba(0, 0, 0, 0.7)
+}
+
+
+/* EXPAND OPTION CATEGORIES*/
+
+
+/* PAGINATION ON CATE.HTML*/
+
 .pagination a {
     display: inline-block;
     height: 40px;
@@ -162,6 +288,12 @@ body {
     line-height: 40px;
     text-align: center;
 }
+
+
+/* PAGINATION ON CATE.HTML*/
+
+
+/* INSTAGRAM EFFECTS*/
 
 .insta-item {
     height: 320px;
@@ -216,25 +348,11 @@ body {
     opacity: 1;
 }
 
-.product-detail-price {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ca1515;
-    margin-bottom: 30px;
-}
 
-.btn-cart {
-    font-size: 16px;
-    background: #ca1515;
-    padding: 14px 30px 15px;
-    border-radius: 50px;
-}
+/* INSTAGRAM EFFECTS*/
 
-.card-text p {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ca1515;
-}
+
+/* SETTING CHECKOUT*/
 
 .checkout-input p {
     color: #444444;
@@ -252,6 +370,12 @@ body {
     color: #666666;
 }
 
+
+/* SETTING CHECKOUT*/
+
+
+/* BUTTON ON CHECKOUT.HTML*/
+
 .btn-red {
     font-size: 18px;
     background: #ca1515;
@@ -259,8 +383,13 @@ body {
     border-radius: 50px;
 }
 
+
+/* BUTTON ON CHECKOUT.HTML*/
+
+
+/* SETTING CONTACT*/
+
 .contact-info h5 {
-    color: #111111;
     font-size: 26px;
     margin-bottom: 20px;
 }
@@ -272,9 +401,14 @@ body {
 
 .contact-info h6,
 .contact-info p {
-    color: #111111;
     font-size: 20px;
 }
+
+
+/* SETTING CONTACT*/
+
+
+/* SETTING FOOTER*/
 
 .footer-about p,
 .footer-info a,
@@ -286,41 +420,16 @@ body {
     transform: scale(1.1);
 }
 
-.subNav {
-    display: none;
-    position: absolute;
-    color: #f26200;
-    background: #ffffdd;
-    padding: 0px;
+
+/* SETTING FOOTER*/
+
+
+/*SET LEFT- FOOTER */
+
+.footer-info a {
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
-.sub1Nav {
-    display: none;
-    position: absolute;
-    color: #f26200;
-    background: #ffffdd;
-    padding: 0px;
-    left: 100%;
-    top: 0;
-    width: 120px;
-    z-index: 1;
-}
 
-.mainNav:hover>.subNav {
-    display: block;
-}
-
-.subNav li:hover>.sub1Nav {
-    display: block;
-}
-
-.add-to-card {
-    position: absolute;
-    left: 15%;
-    top: 40%;
-    display: none;
-}
-
-.card:hover>.add-to-card {
-    display: block;
-}
+/*SET LEFT- FOOTER */
