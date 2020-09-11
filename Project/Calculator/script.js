@@ -39,6 +39,12 @@ let getValueFromScreen = function()
     let screen = document.getElementById("result");
     return screen.value;
 }
+let numberButton = document.querySelectorAll('.number');
+numberButton.forEach(function (button) {
+    button.addEventListener('click', function() {
+        numberInput(button);
+    });
+});
 let numberInput = function(btn)
 {
     let value = btn.innerHTML;
@@ -72,7 +78,13 @@ let numberInput = function(btn)
             printToScreen(currentScreen+value);
         }
     }
-}
+};
+let operatorButton = document.querySelectorAll('.operator');
+operatorButton.forEach(function (oppbutton) {
+    oppbutton.addEventListener('click', function() {
+        operatorInput(oppbutton);
+    });
+});
 let operatorInput = function(btn) {
     let operator = btn.innerHTML;
     let currentScreen = getValueFromScreen();
@@ -102,10 +114,10 @@ let operatorInput = function(btn) {
             setOperator("%");
             setCurrentNumber(Number(currentScreen));
             break;
-    case "+/-":
-        currentScreen = 0 - Number(currentScreen);
-        printToScreen(currentScreen);
-        break;
+        case "+/-":
+            currentScreen = 0 - Number(currentScreen);
+            printToScreen(currentScreen);
+            break;
         case "=":
             if (flag === 0) {
                 setCurrentNumber(Number(currentScreen));
@@ -143,9 +155,13 @@ let calculate = function() {
              break;
     }
 }
+let buttonClear = document.getElementById('clearAll');
+buttonClear.addEventListener('click', function(){
+    clearAll();
+});
 let clearAll = function() {
     printToScreen ("0");
-    setCurrentNumber (0);
-    setResult (0);
-    setOperator ("");
+    setCurrentNumber(0);
+    setResult(0);
+    setOperator("");
 }
