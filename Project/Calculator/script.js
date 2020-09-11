@@ -1,3 +1,4 @@
+"use strict";
 let currentNumber = 0;
 let result = 0;
 let operator = "";
