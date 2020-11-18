@@ -37,7 +37,7 @@ img{
     display: inline-block;
     color: white;
     padding: 0px 20px;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
 }
 .top-info-nav li::after {
@@ -61,7 +61,9 @@ img{
 .main-header__logo span{
     color: #29aae1;
 }
-
+.main-menu {
+    margin-left: auto;
+}
 .nav-link {
     margin: 0 10px;
     font-size: 13px;
@@ -158,6 +160,7 @@ img{
 .main-banner h1{
     font-weight: 700;
     margin-bottom: 20px;
+    font-size: 40px;
 }
 .main-banner h3{
     margin-top: 30px;
@@ -243,6 +246,7 @@ img{
     width: 100%;
     background-color: transparent;
     border: none;
+    outline: 0;
     padding: 0 15px;
 }
 .search-tracking-leftside__search>input::placeholder{
@@ -269,7 +273,6 @@ img{
 }
 .search-tracking-rightside__component{
     display: flex;
-    /* padding-left:30px; */
     margin: 0 auto;
     padding: 10px 20px;
     width: 300px;
@@ -331,6 +334,7 @@ img{
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+    justify-content: center;
 }
 .services__list .column, .priority .column{
     width: 33.33%;
@@ -518,7 +522,8 @@ footer {
 }
 .footer__ads {
     padding-top: 80px;
-    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 .copyright {
     text-align: center;
@@ -598,6 +603,9 @@ footer {
     .search-tracking-rightside, .search-tracking-leftside, .footer__slogan, .footer__nav, .footer__ads,
     .services__list .column, .other-services__list .column{
         width: 100%;
+    }
+    .footer__ads {
+        justify-content: center;
     }
 }
 
