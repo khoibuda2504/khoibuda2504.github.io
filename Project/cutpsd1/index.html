@@ -13,31 +13,61 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
         <header id="header" class="header">
             <div class="top-header">
                 <div class="container">
                     <ul class="top-info-nav">
                         <li>$ TỶ GIÁ: 1= 3,450 </li>
-                        <li>EMAIL: ADMIN@NHAPHANGSIEUTOC.COM</li>
-                        <li>HOTLINE: 0126-922-0162</li>
-                        <li>GIỜ LÀM VIỆC: 08:00 - 17:00</li>
+                        <li class="xs-hidden">EMAIL: ADMIN@NHAPHANGSIEUTOC.COM</li>
+                        <li class="xs-hidden">HOTLINE: 0126-922-0162</li>
+                        <li class="xs-hidden">GIỜ LÀM VIỆC: 08:00 - 17:00</li>
                     </ul>
                 </div>
             </div>
               <div class="main-header">
                 <div class="container">
                         <div class="main-header__logo">
-                            Logo <span>demo</span>
+                            <img src="./pictures/Logo demo.png" alt="">
                         </div>
                         <nav class="main-menu ">
                             <ul class="nav-links">
                                 <li class="nav-link"><a href="#">GIỚI THIỆU</a></li>
-                                <li class="nav-link"><a href="#">HƯỚNG DẪN</a></li>
-                                <li class="nav-link"><a href="#">BIỂU PHÍ</a></li>
-                                <li class="nav-link"><a href="#">CHÍNH SÁCH</a></li>
-                                <li class="nav-link"><a href="#">CÔNG CỤ</a></li>
-                                <li class="nav-link"><a href="#">ĐẶT HÀNG MOBILE</a></li>
+                                <li class="nav-link">
+                                    <a href="#">HƯỚNG DẪN</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">BIỂU PHÍ</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">CHÍNH SÁCH</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">CÔNG CỤ</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">ĐẶT HÀNG MOBILE</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
                                 <li class="nav-link nav-link--login"><a href="#">ĐĂNG KÝ/ĐĂNG NHẬP</a></li>
                             </ul>
                         </nav>
@@ -57,10 +87,22 @@
                 <h2>Chúng tôi</h2> 
                 <h1>CHUYÊN NHẬP HÀNG & </h1>
                 <h1>VẬN CHUYỂN HÀNG TỪ TRUNG QUỐC</h1>
-                <h3>CÀI ĐẶT CÔNG CỤ: 
-                    <button class="btn btn-chrome"><i class="fab fa-chrome"></i> CHROME</button>
-                    <button class="btn btn-coccoc"><i class="fab fa-chrome"></i> CỐC CỐC</button>
-                </h3>
+                <div class="main-banner__setup">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="main-banner__title">
+                                CÀI ĐẶT CÔNG CỤ: 
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="main-banner__button">
+                                <a href="#" class="btn btn-chrome"><i class="fab fa-chrome"></i> CHROME</a>
+                                <a href="#" class="btn btn-coccoc"><i class="fab fa-chrome"></i> CỐC CỐC</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
     </section>
     <section class="search-tracking">
@@ -68,20 +110,30 @@
             <div class="columns">
                     <div class="search-tracking-leftside">
                             <ul class="search-tracking-leftside__header">
-                                <li class="current">Tìm kiếm sản phẩm</li>
-                                <li class="search-tracking-leftside__header--opacity">Tracking</li>
+                                <li data-tab="#search" class="current">Tìm kiếm sản phẩm</li>
+                                <li data-tab="#tracking" class="">Tracking</li>
                             </ul>
                             <p>You have finished building your own website. You have introduced your com-pany and 
                                 presented your products and services.
                             </p>
+                            
                             <div class="search-tracking-leftside__button">
-                                <button class="btn-small btn-small-active">TAOBAO</button>
-                                <button class="btn-small">TMALL</button>
-                                <button class="btn-small">1688</button>
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark">TAOBAO</span>
+                                </label>
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark">TMALL</span>
+                                </label>
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark">1688</span>
+                                </label>
                             </div>
                             <div class="search-tracking-leftside__search">
                                 <input placeholder="Tìm kiếm sản phẩm"></input>
-                                <a>TÌM KIẾM</a>
+                                <button>TÌM KIẾM</button>
                             </div>
                         
                     </div>
@@ -146,7 +198,8 @@
                                 Like a majority of sales people. I visit a huge number of clients and propects every
                                 month, some end up...
                             </div>
-                            <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                            <a href="#" class="link"></a>
                         </div>
                     </div>
                     <div class="column">
@@ -157,7 +210,7 @@
                                 Like a majority of sales people. I visit a huge number of clients and propects every
                                 month, some end up...
                             </div>
-                            <button class="active">Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
                         </div>
                     </div>
                     <div class="column">
@@ -168,7 +221,7 @@
                                 Like a majority of sales people. I visit a huge number of clients and propects every
                                 month, some end up...
                             </div>
-                            <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
                         </div>
                     </div>
                     <div class="column">
@@ -179,7 +232,7 @@
                                 Like a majority of sales people. I visit a huge number of clients and propects every
                                 month, some end up...
                             </div>
-                            <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
                         </div>
                     </div>
                     
@@ -191,7 +244,7 @@
                                 Like a majority of sales people. I visit a huge number of clients and propects every
                                 month, some end up...
                             </div>
-                            <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
                         </div>
                     </div>
                     <div class="column">
@@ -202,7 +255,7 @@
                                 Like a majority of sales people. I visit a huge number of clients and propects every
                                 month, some end up...
                             </div>
-                            <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -218,7 +271,7 @@
             <div class="other-services__list">
                 <div class="columns">
                     <div class="column">
-                        <div class="other-services__item active">
+                        <div data-tab="guide-1" class="other-services__item">
                             <div class="other-services__icon">
                                 <img src="pictures/Forma a1.png"></img>
                               </div>
@@ -229,7 +282,7 @@
                         
                     </div>
                     <div class="column">
-                        <div class="other-services__item">
+                        <div data-tab="guide-2" class="other-services__item">
                             <div class="other-services__icon">
                                 <img src="pictures/Forma a2.png"></img>
                               </div>
@@ -240,7 +293,7 @@
                         
                     </div>
                     <div class="column">
-                        <div class="other-services__item">
+                        <div data-tab="guide-3" class="other-services__item">
                             <div class="other-services__icon">
                                 <img src="pictures/Forma a3.png"></img>
                               </div>
@@ -251,7 +304,7 @@
                         
                     </div>
                     <div class="column">
-                        <div class="other-services__item">
+                        <div data-tab="guide-4" class="other-services__item">
                             <div class="other-services__icon">
                                 <img src="pictures/Forma a4.png"></img>
                               </div>
@@ -262,7 +315,7 @@
                         
                     </div>
                     <div class="column">
-                        <div class="other-services__item">
+                        <div data-tab="guide-5" class="other-services__item">
                             <div class="other-services__icon">
                                 <img src="pictures/Forma a5.png"></img>
                               </div>
@@ -273,7 +326,7 @@
                         
                     </div>
                     <div class="column">
-                        <div class="other-services__item">
+                        <div data-tab="guide-6" class="other-services__item">
                             <div class="other-services__icon">
                                 <img src="pictures/Forma a6.png"></img>
                               </div>
@@ -292,16 +345,18 @@
             <div class="register__image">
                 <img src="./pictures/Macbook.png" alt="">
             </div>
-            <div class="register__heading">
-                ĐĂNG KÝ TÀI KHOẢN
-            </div>
-            <div class="register__desc">
-                <div class="register__text">
-                    I am not to immediate to reveal them because I know the majority doesn't even take battle
-                    on them. All I know is that they work and you should be familiar with this too.
+            <div class="register__info">
+                <div class="register__heading">
+                    ĐĂNG KÝ TÀI KHOẢN
                 </div>
-                <div class="register_button">
-                    <a>ĐĂNG KÝ</a>
+                <div class="register__desc">
+                    <div class="register__text">
+                        I am not to immediate to reveal them because I know the majority doesn't even take battle
+                        on them. All I know is that they work and you should be familiar with this too.
+                    </div>
+                    <div class="register_button">
+                        <a>ĐĂNG KÝ</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -321,7 +376,8 @@
                                         Like a majority of sales people. I visit a huge number of clients and propects every
                                         month, some end up...
                                     </div>
-                                    <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                                    <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                                    <a href="#" class="link"></a>
                                 </div>
                             </div>
                             <div class="column">
@@ -332,7 +388,8 @@
                                         Like a majority of sales people. I visit a huge number of clients and propects every
                                         month, some end up...
                                     </div>
-                                    <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                                    <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                                    <a href="#" class="link"></a>
                                 </div>
                             </div>
                             <div class="column">
@@ -343,7 +400,8 @@
                                         Like a majority of sales people. I visit a huge number of clients and propects every
                                         month, some end up...
                                     </div>
-                                    <button>Xem thêm<i class="fas fa-arrow-circle-right"></i></button>
+                                    <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                                    <a href="#" class="link"></a>
                                 </div>
                             </div>
                         </div>
@@ -377,25 +435,32 @@
     <footer class="footer">
         <div class="container">
             <div class="columns">
-                <div class="footer__slogan">
-                    <h1>Logo Demo</h1>
-                    <span>Successful businesses have many things in common, today we'll look at the Big 
-                        'R'of recognition and how a digital advertising network may help.
-                    </span>
+                <div class="column">
+                    <div class="footer__slogan">
+                        <img src="./pictures/Logo demo 2.png" alt="">
+                        <span>Successful businesses have many things in common, today we'll look at the Big 
+                            'R'of recognition and how a digital advertising network may help.
+                        </span>
+                    </div>
                 </div>
-                <div class="footer__nav">
-                    <h2>MENU</h2>
-                    <ul class="footer__nav__list">
-                        <li class="footer__nav__item">Trang chủ</li>
-                        <li class="footer__nav__item">Giới thiệu</li>
-                        <li class="footer__nav__item">Sản phẩm</li>
-                        <li class="footer__nav__item">Tin tức</li>
-                        <li class="footer__nav__item">Liên hệ</li>
-                    </ul>
+                <div class="column">
+                    <div class="footer__nav">
+                        <h2>MENU</h2>
+                        <ul class="footer__nav__list">
+                            <li class="footer__nav__item"><a href="#">Trang chủ</a></li>
+                            <li class="footer__nav__item"><a href="#">Giới thiệu</a></li>
+                            <li class="footer__nav__item"><a href="#">Sản phẩm</a></li>
+                            <li class="footer__nav__item"><a href="#">Tin tức</a></li>
+                            <li class="footer__nav__item"><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
                 </div>
+               <div class="column">
                 <div class="footer__ads">
                     <img src="./pictures/Screen Shot 2019-01-11 at 09.49.00.png" alt="">
                 </div>
+               </div>
+                
             </div>
         </div>
     </footer>
