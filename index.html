@@ -1,250 +1,474 @@
-﻿<!DOCTYPE html lang="vi-VN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto">
-    <link href="style.css" rel="stylesheet">
-    <style>
-        .bg-dark {
-            background-color: #000 !important;
-        }
-        .progress {
-            background-color: #cbd5de;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <!-- Active for mobile -->
-    <div id="mobile">
-        <div class="container-fluid ">
-            <div class="row d-flex p-0">
-                <nav class="col-12 pt-0 d-flex justify-content-center align-items-center sticky-top bg-dark ">
-                    <a class="active text-center" href="#">HOME</a>
-                    <a class="text-center" href="#About">ABOUT</a>
-                    <a class="text-center" href="#Hobby">HOBBY</a>
-                    <a class="text-center" href="#Hireme">CONTACT</a>
-                </nav>
-                <div class="image col-12  d-flex justify-content-center align-items-center pt-4 bg-dark">
-                    <img src="images/dangkhoi.png" alt="Avatar">
-                </div> 
-                <div class="col-12 jumbotron jumbotron-fluid text-center text-white bg-dark">
-                    <h1 id="Home">Bùi Đăng Khôi</h1>
+        <header id="header" class="header">
+            <div class="top-header">
+                <div class="container">
+                    <ul class="top-info-nav">
+                        <li>$ TỶ GIÁ: 1= 3,450 </li>
+                        <li class="xs-hidden">EMAIL: ADMIN@NHAPHANGSIEUTOC.COM</li>
+                        <li class="xs-hidden">HOTLINE: 0126-922-0162</li>
+                        <li class="xs-hidden">GIỜ LÀM VIỆC: 08:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+              <div class="main-header">
+                <div class="container">
+                        <div class="main-header__logo">
+                            <img src="./pictures/Logo demo.png" alt="">
+                        </div>
+                        <nav class="main-menu ">
+                            <ul class="nav-links">
+                                <li class="nav-link"><a href="#">GIỚI THIỆU</a></li>
+                                <li class="nav-link">
+                                    <a href="#">HƯỚNG DẪN</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">BIỂU PHÍ</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">CHÍNH SÁCH</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">CÔNG CỤ</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link"><a href="#">ĐẶT HÀNG MOBILE</a>
+                                    <ul>
+                                        <li>Option 1</li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link nav-link--login"><a href="#">ĐĂNG KÝ/ĐĂNG NHẬP</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <button class="main-header__button">
+                                ĐĂNG KÝ & <br>
+                                ĐĂNG NHẬP
+                        </button>
+                        <div class="hamburger-btn mobile-menu-btn">
+                            <div class="bar"></div>
+                        </div>
+                </div>
+              </div>  
+        </header>
+    <section class="main-banner">
+            <div class="container">
+                <h2>Chúng tôi</h2> 
+                <h1>CHUYÊN NHẬP HÀNG & </h1>
+                <h1>VẬN CHUYỂN HÀNG TỪ TRUNG QUỐC</h1>
+                <div class="main-banner__setup">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="main-banner__title">
+                                CÀI ĐẶT CÔNG CỤ: 
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="main-banner__button">
+                                <a href="#" class="btn btn-chrome"><i class="fab fa-chrome"></i> CHROME</a>
+                                <a href="#" class="btn btn-coccoc"><i class="fab fa-chrome"></i> CỐC CỐC</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="search-tracking">
+        <div class="container">
+            <div class="columns">
+                    <div class="search-tracking-leftside">
+                            <ul class="search-tracking-leftside__header">
+                                <li data-tab="#search" class="current">Tìm kiếm sản phẩm</li>
+                                <li data-tab="#tracking" class="">Tracking</li>
+                            </ul>
+                            <p>You have finished building your own website. You have introduced your com-pany and 
+                                presented your products and services.
+                            </p>
+                            
+                            <div class="search-tracking-leftside__button">
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark">TAOBAO</span>
+                                </label>
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark">TMALL</span>
+                                </label>
+                                <label class="container__label">
+                                    <input type="checkbox">
+                                    <span class="checkmark">1688</span>
+                                </label>
+                            </div>
+                            <div class="search-tracking-leftside__search">
+                                <input placeholder="Tìm kiếm sản phẩm"></input>
+                                <button>TÌM KIẾM</button>
+                            </div>
+                        
+                    </div>
+                    <div class="search-tracking-rightside">
+                            <div class="search-tracking-rightside__component">
+                                <div class="search-tracking-rightside__icon">
+                                    <img src="./pictures/Forma 1.png" alt="leaf">
+                                </div>
+                                <div class="search-tracking-rightside__description">
+                                    <div class="search-tracking-rightside__number">
+                                        05
+                                    </div>
+                                    <div class="search-tracking-rightside__text">
+                                        NĂM KINH NGHIỆM
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-tracking-rightside__component">
+                                <div class="search-tracking-rightside__icon">
+                                    <img src="./pictures/Forma 2.png" alt="book">
+                                </div>
+                                <div class="search-tracking-rightside__description">
+                                    <div class="search-tracking-rightside__number">
+                                        12,345
+                                    </div>
+                                    <div class="search-tracking-rightside__text">
+                                        KHÁCH HÀNG
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-tracking-rightside__component">
+                                <div class="search-tracking-rightside__icon">
+                                    <img src="./pictures/Forma 3.png" alt="book">
+                                </div>
+                                <div class="search-tracking-rightside__description">
+                                    <div class="search-tracking-rightside__number">
+                                        85,302
+                                    </div>
+                                    <div class="search-tracking-rightside__text">
+                                        ĐƠN HÀNG
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <div class="sub-background">
+    </div>
+    <section class="services">
+        <div class="container">
+            <h1>Các dịch vụ</h1>
+            <p>You have finished building your own website. You have introduced your company and 
+                presented your products and services. You have added...</p>
+            <div class="services__list">
+                <div class="columns">
+                    <div class="column">
+                        <div class="services__item">
+                            <img src="./pictures/Shape 1.png" alt="">
+                            <h4>CHUYỂN, NẠP TIỀN ALIPAY, WECHAT</h4>
+                            <div class="detail">
+                                Like a majority of sales people. I visit a huge number of clients and propects every
+                                month, some end up...
+                            </div>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                            <a href="#" class="link"></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="services__item">
+                            <img src="./pictures/Shape 2.png" alt="">
+                            <h4>ĐẶT HÀNG, SHIP HÀNG QUỐC TẾ</h4>
+                            <div class="detail">
+                                Like a majority of sales people. I visit a huge number of clients and propects every
+                                month, some end up...
+                            </div>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="services__item">
+                            <img src="./pictures/Shape 3.png" alt="">
+                            <h4>CHUYỂN HÀNG 2 CHIỀU VIỆT TRUNG</h4>
+                            <div class="detail">
+                                Like a majority of sales people. I visit a huge number of clients and propects every
+                                month, some end up...
+                            </div>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="services__item">
+                            <img src="./pictures/Shape 4.png" alt="">
+                            <h4>HỖ TRỢ TƯ VẤN CHUYÊN NGHIỆP</h4>
+                            <div class="detail">
+                                Like a majority of sales people. I visit a huge number of clients and propects every
+                                month, some end up...
+                            </div>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="services__item">
+                            <img src="./pictures/Shape 5.png" alt="">
+                            <h4>DỄ DÀNG QUẢN LÝ ĐƠN HÀNG</h4>
+                            <div class="detail">
+                                Like a majority of sales people. I visit a huge number of clients and propects every
+                                month, some end up...
+                            </div>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="services__item">
+                            <img src="./pictures/Shape 6.png" alt="">
+                            <h4>  GIAO HÀNG TẬN NƠI</h4>
+                            <div class="detail">
+                                Like a majority of sales people. I visit a huge number of clients and propects every
+                                month, some end up...
+                            </div>
+                            <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="other-services">
+        <div class="container">
+            <h1>Các dịch vụ</h1>
+            <div class="other-services__list">
+                <div class="columns">
+                    <div class="column">
+                        <div data-tab="guide-1" class="other-services__item">
+                            <div class="other-services__icon">
+                                <img src="pictures/Forma a1.png"></img>
+                              </div>
+                              <div class="other-services__desc"> 
+                                  ĐĂNG KÝ TÀI KHOẢN
+                              </div>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
+                        <div data-tab="guide-2" class="other-services__item">
+                            <div class="other-services__icon">
+                                <img src="pictures/Forma a2.png"></img>
+                              </div>
+                              <div class="other-services__desc"> 
+                                  CÀI ĐẶT CÔNG CỤ
+                              </div>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
+                        <div data-tab="guide-3" class="other-services__item">
+                            <div class="other-services__icon">
+                                <img src="pictures/Forma a3.png"></img>
+                              </div>
+                              <div class="other-services__desc"> 
+                                  CHỌN & THÊM VÀO GIỎ 
+                              </div>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
+                        <div data-tab="guide-4" class="other-services__item">
+                            <div class="other-services__icon">
+                                <img src="pictures/Forma a4.png"></img>
+                              </div>
+                              <div class="other-services__desc"> 
+                                  GỬI ĐƠN ĐẶT HÀNG
+                              </div>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
+                        <div data-tab="guide-5" class="other-services__item">
+                            <div class="other-services__icon">
+                                <img src="pictures/Forma a5.png"></img>
+                              </div>
+                              <div class="other-services__desc"> 
+                                  ĐẶT CỌC TIỀN HÀNG
+                              </div>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
+                        <div data-tab="guide-6" class="other-services__item">
+                            <div class="other-services__icon">
+                                <img src="pictures/Forma a6.png"></img>
+                              </div>
+                              <div class="other-services__desc"> 
+                                  NHẬN HÀNG & THANH TOÁN
+                              </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
-            
-        <article>
-            <main class="col-12">
-                <h1 id="About">Giới thiệu bản thân</h1>
-                <p class="text-justify">Xin chào! Hiện tôi đang là một nhân viên ngân hàng với chức danh chuyên viên quan hệ khách hàng.
-                Công việc áp lực khiến tôi luôn thúc ép bản thân phải trau dồi kiến thức để hoàn thiện bản thân.
-                Sau thời gian tìm hiểu về front-end, tôi cảm thấy thú vị trong ngành Lập trình viên nên quyết định tìm hiểu và làm việc tại 
-                lĩnh vực mới.
-                </p>
-            </main> 
-            <main class="col-12">
-                <h1>Kỹ năng</h1>
-                <ul class="row">
-                    <li class="text-center col-6">
-                        <img src="images/html.png" alt="html" class="image-fluid" style="width:80%;">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:90%"></div>
-                        </div>
-                    </li>
-                    <li class="text-center col-6">
-                        <img src="images/css.png" alt="css" class="image-fluid" style="width:80%;">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:80%"></div>
-                        </div>
-                    </li>
-                    <li class="text-center col-6">
-                        <img src="images/js.png" alt="javaScript" class="image-fluid" style="width:80%;">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:75%"></div>
-                        </div>
-                    </li>
-                    <li class="text-center col-6">
-                        <img src="images/bt.png" alt="boostrap" class="image-fluid" style="width:80%;">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:85%"></div>
-                        </div>
-                    </li>
-                </ul>
-            </main>
-            <main class="col-12">
-                <h1>Quá trình học tập và làm việc</h1>
-                <p class="text-justify">Từ năm 2013 đến năm 2017: Tốt nghiệp Đại học Mở TP.HCM chuyên ngành Tài chính - Ngân hàng.</p>
-                <p class="text-justify">Từ năm 2017 đến nay: Công tác tại Ngân hàng TMCP Sài Gòn Thương Tín (Sacombank).</p>
-            </main>
-            <main class="col-12">
-                <h1 id="Hobby">Hoạt động bản thân</h1>
-                <div class="row"> 
-                    <div class="column">
-                      <img src="images/1.jpg" style="width:100%">
-                      <img src="images/4.jpg" style="width:100%">
-                      <img src="images/10.jpg" style="width:100%">
-                    </div>
-                    <div class="column">
-                      <img src="images/6.jpg" style="width:100%">
-                      <img src="images/3.jpg" style="width:100%">
-                      <img src="images/11.jpg" style="width:100%">
-                    </div> 
-                    <div class="column">
-                      <img src="images/9.jpg" style="width:100%">
-                      <img src="images/8.jpg" style="width:100%">
-                      <img src="images/12.jpg" style="width:100%">
-                    </div> 
-                    <div class="column">
-                    <img src="images/1.jpg" style="width:100%">
-                    <img src="images/8.jpg" style="width:100%">
-                    <img src="images/6.jpg" style="width:100%">
-                     </div>
-                </div>
-            </main>
-            <main class="col-12">
-                <h1 id="Hireme">Thông tin liên hệ</h1>
-                <ul class="fix">
-                    <li> <i class="fa fa-user" ></i>  Bùi Đăng Khôi</li>
-                    <li> <a href="https://www.google.com/maps/place/35K+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+5K,+T%C3%A2n+Thu%E1%BA%ADn+T%C3%A2y,+Qu%E1%BA%ADn+7,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7505923,106.7142693,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f7be69de4a3:0xd2800148e7431b27!8m2!3d10.750587!4d106.716458"><i class="fa fa-home"></i> 35K, Khu phố 5, Phường Tân Thuận Tây, Quận 7, TP.HCM</a></li>
-                    <li> <a href="callto:0909468135"><i class="fa fa-phone"></i> 0909.468.135</a></li>
-                    <li> <a href="mailto: khoibuda2504@gmail.com"><i class="fa fa-envelope"></i> khoibuda2504@gmail.com</a></li> 
-                    <li> <a href="https://www.facebook.com/dangkhoi.2504"><i class="fab fa-facebook"></i> dangkhoi.2504</a></li>
-                </ul>
-            </main>
     </div>
-        </article>
-    </div>
-            <!-- End for mobile -->
-            <!-- Active for desktop --> 
-            <div id="container">
-                <nav class="d-flex flex-column">
-                    <img title="Avatar"src="images/dangkhoi.png">
-                    <a title="Home" class="active d-flex justify-content-center align-items-center" href="#"><i class="fa fa-home"></i></a>
-                    <a title="About" class="d-flex justify-content-center align-items-center" href="#About1"><i class="fa fa-user"></i></a>
-                    <a title="Hobby" class="d-flex justify-content-center align-items-center" href="#Hobby1"><i class="fa fa-heart"></i></a>
-                    <a title="Contact" class="d-flex justify-content-center align-items-center" href="#Hireme1"><i class="fa fa-envelope"></i></a>
-                </nav>
-                <main>
-                    <div class="jumbotron text-center bg-dark">
-                        <h1 class="display-1" id="Home">Bùi Đăng Khôi</h1>
-                     </div>
-                        <div class="about">
-                        <h1 id="About1">Giới thiệu bản thân</h1>
-                        <p class="text-justify">Xin chào! Hiện tôi đang là một nhân viên ngân hàng với chức danh chuyên viên quan hệ khách hàng.
-                        Công việc áp lực khiến tôi luôn thúc ép bản thân phải trau dồi kiến thức để hoàn thiện bản thân.
-                        Sau thời gian tìm hiểu về front-end, tôi cảm thấy thú vị trong ngành Lập trình viên nên quyết định tìm hiểu và làm việc tại 
-                        lĩnh vực mới.
-                         </p>
-                    </div>
-                    <div class="kynang  no-gutter">
-                        <h1 class="center">Kỹ năng</h1>
-                        <ul class="row">
-                            <li class="col-6 text-center">  <i class="fab fa-html5 py-2 text-danger"></i><br>
-                                HTML5
-                                <div class="white">
-                                    &#160;
-                                    <div class="grey" style="width:90%">&#160;</div>
-                                </div>
-                            </li>
-                            <li class="col-6 text-center"><i class="fab fa-css3-alt py-2 text-primary"></i><br>
-                                CSS3
-                                <div class="white">
-                                    &#160;
-                                    <div class="grey" style="width:80%"">&#160;</div>
-                                </div>
-                            </li>
-                            <li class="col-6 text-center"><i class="fab fa-js-square py-2 text-warning"></i><br>
-                                JavaScript
-                                <div class="white">
-                                    &#160;
-                                    <div class="grey" style="width:75%"">&#160;</div>
-                                </div>
-                            </li>
-                            <li class="col-6 text-center"><i class="fab fa-bootstrap py-2"></i><br>
-                                Boostrap
-                                <div class="white">
-                                    &#160;
-                                    <div class="grey" style="width:85%">&#160;</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="quatrinh">
-                        <h1 class="center">Quá trình học tập và làm việc</h1>
-                        <p class="text-justify">Từ năm 2013 đến năm 2017: Tốt nghiệp Đại học Mở TP.HCM chuyên ngành Tài chính - Ngân hàng.</p>
-                        <p class="text-justify">Từ năm 2017 đến nay: Công tác tại Ngân hàng TMCP Sài Gòn Thương Tín (Sacombank).</p>
-                    </div>
-                    <div class="sothich">
-                        <h1 id="Hobby1" class="center">Hoạt động bản thân</h1>
-                        <div class="row"> 
-                            <div class="column">
-                                 <img src="images/1.jpg" style="width:100%" >
-                                 <img src="images/4.jpg" style="width:100%">
-                                  <img src="images/10.jpg" style="width:100%">
-                            </div>
-                            <div class="column">
-                                <img src="images/6.jpg" style="width:100%">
-                                <img src="images/3.jpg" style="width:100%">
-                                <img src="images/11.jpg" style="width:100%">
-                            </div> 
-                            <div class="column">
-                                <img src="images/9.jpg" style="width:100%">
-                                <img src="images/8.jpg" style="width:100%">
-                                <img src="images/12.jpg" style="width:100%">
-                            </div> 
-                            <div class="column">
-                                <img src="images/1.jpg" style="width:100%">
-                                <img src="images/8.jpg" style="width:100%">
-                                <img src="images/6.jpg" style="width:100%">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hireme">
-                        <h1 id="Hireme1" class="center">Thông tin liên hệ</h1>
-                        <ul>
-                            <li> <i class="fa fa-user"></i>  Bùi Đăng Khôi</li>
-                            <li> <a href="https://www.google.com/maps/place/35K+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+5K,+T%C3%A2n+Thu%E1%BA%ADn+T%C3%A2y,+Qu%E1%BA%ADn+7,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7505923,106.7142693,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f7be69de4a3:0xd2800148e7431b27!8m2!3d10.750587!4d106.716458"><i class="fa fa-home"></i> 35K, Khu phố 5, Phường Tân Thuận Tây, Quận 7, TP.HCM</a></li>
-                            <li> <a href="callto:0909468135"><i class="fa fa-phone"></i> 0909.468.135</a></li>
-                            <li> <a href="mailto: khoibuda2504@gmail.com"><i class="fa fa-envelope"></i> khoibuda2504@gmail.com</a></li> 
-                            <li> <a href="https://www.facebook.com/dangkhoi.2504"><i class="fab fa-facebook"></i> dangkhoi.2504</a></li>
-                        </ul>
-                    </div>
-                </main>
+    <div class="register">
+        <div class="container">
+            <div class="register__image">
+                <img src="./pictures/Macbook.png" alt="">
             </div>
-            <div class="text-center fixHireMe">
-                <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#myModal"> HIRE ME</button>
-                <div class="modal" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                            <h4 class="modal-title">Cám ơn bạn đã chọn đúng người</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                Một lần nữa xin cám ơn bạn đã chọn tôi
-                            </div>
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                         </div>
+            <div class="register__info">
+                <div class="register__heading">
+                    ĐĂNG KÝ TÀI KHOẢN
+                </div>
+                <div class="register__desc">
+                    <div class="register__text">
+                        I am not to immediate to reveal them because I know the majority doesn't even take battle
+                        on them. All I know is that they work and you should be familiar with this too.
+                    </div>
+                    <div class="register_button">
+                        <a>ĐĂNG KÝ</a>
                     </div>
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="services">
+        <div class="container">
+            <h1>Quyền lợi khách hàng</h1>
+            <p>You have finished building your own website. You have introduced your company and 
+                presented your products and services. You have added...</p>
+                <div class="services__list">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="services__item">
+                                    <img src="./pictures/Shape 1.png" alt="">
+                                    <h4>  CHUYỂN, NẠP TIỀN ALIPAY, WECHAT</h4>
+                                    <div class="detail">
+                                        Like a majority of sales people. I visit a huge number of clients and propects every
+                                        month, some end up...
+                                    </div>
+                                    <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                                    <a href="#" class="link"></a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="services__item">
+                                    <img src="./pictures/Shape 1.png" alt="">
+                                    <h4>  CHUYỂN, NẠP TIỀN ALIPAY, WECHAT</h4>
+                                    <div class="detail">
+                                        Like a majority of sales people. I visit a huge number of clients and propects every
+                                        month, some end up...
+                                    </div>
+                                    <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                                    <a href="#" class="link"></a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="services__item">
+                                    <img src="./pictures/Shape 1.png" alt="">
+                                    <h4>  CHUYỂN, NẠP TIỀN ALIPAY, WECHAT</h4>
+                                    <div class="detail">
+                                        Like a majority of sales people. I visit a huge number of clients and propects every
+                                        month, some end up...
+                                    </div>
+                                    <span>Xem thêm<i class="fas fa-arrow-circle-right"></i></span>
+                                    <a href="#" class="link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <section class="info">
+        <div class="container">
+            <div class="columns">
+                <div class="info__detail">
+                    <h5>ĐỊA CHỈ</h5>
+                    <span>319 Lý Thường Kiệt, P.15, Q.11, TP.HCM</span>
                     
-      
+                    <h5>HOTLINE</h5>
+                    <span>0126-922-01262</span>
 
-            
-    
-  
+                    <h5>EMAIL CONTACT</h5>
+                    <span>admin@nhaphangsieutoc.com</span>
+
+                    <h5>GIỜ HOẠT ĐỘNG</h5>
+                    <span>8:30 am - 05:30 pm</span>
+
+                </div>
+                <div class="info_map">
+                    <img src="./pictures/Screen Shot 2018-11-30 at 16.49.31.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="footer__slogan">
+                        <img src="./pictures/Logo demo 2.png" alt="">
+                        <span>Successful businesses have many things in common, today we'll look at the Big 
+                            'R'of recognition and how a digital advertising network may help.
+                        </span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer__nav">
+                        <h2>MENU</h2>
+                        <ul class="footer__nav__list">
+                            <li class="footer__nav__item"><a href="#">Trang chủ</a></li>
+                            <li class="footer__nav__item"><a href="#">Giới thiệu</a></li>
+                            <li class="footer__nav__item"><a href="#">Sản phẩm</a></li>
+                            <li class="footer__nav__item"><a href="#">Tin tức</a></li>
+                            <li class="footer__nav__item"><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+               <div class="column">
+                <div class="footer__ads">
+                    <img src="./pictures/Screen Shot 2019-01-11 at 09.49.00.png" alt="">
+                </div>
+               </div>
+                
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        Designed and developed by <span>Mona Media</span>
+    </div>
+</div>
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
