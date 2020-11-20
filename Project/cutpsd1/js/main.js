@@ -8,12 +8,10 @@ $(function(){
 })
 
 $(function(){
-		if ($(window).width() < 991) {
 			$(".main-menu span").click(function(){
 				$(this).toggleClass('active');
 				$(this).parent().toggleClass('open');
 			})  
-		}
 })
 
 
