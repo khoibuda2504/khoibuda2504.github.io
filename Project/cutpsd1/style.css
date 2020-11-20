@@ -767,6 +767,9 @@ footer {
     .nav-link span.active {
         transform: rotateX(180deg);
     }
+    .main-meunu span {
+        pointer-events: none;
+    }
 }
 @media screen and (max-width:768px) {
     .top-info-nav .xs-hidden,
