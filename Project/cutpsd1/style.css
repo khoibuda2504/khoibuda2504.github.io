@@ -60,6 +60,9 @@ header {
 .main-menu {
     margin-left: auto;
 }
+.main-menu span {
+    pointer-events: none;
+}
 .overlay.open {
     content: "";
     position: absolute;
@@ -767,8 +770,8 @@ footer {
     .nav-link span.active {
         transform: rotateX(180deg);
     }
-    .main-meunu span {
-        pointer-events: none;
+    .main-menu span {
+        pointer-events: auto;
     }
 }
 @media screen and (max-width:768px) {
