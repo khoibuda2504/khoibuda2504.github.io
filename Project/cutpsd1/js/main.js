@@ -8,10 +8,12 @@ $(function(){
 })
 
 $(function(){
-    $(".main-menu li").click(function(){
-		$(this).toggleClass('open');
-    })
+		$(".main-menu span").click(function(){
+			$(this).toggleClass('active');
+			$(this).parent().toggleClass('open');
+		})  
 })
+
 
 $(function(){
 	$(".search-tracking-leftside").each(function(){

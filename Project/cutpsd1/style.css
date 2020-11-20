@@ -91,7 +91,7 @@ header {
     margin: 0;
 }
 
-li.dropdown:hover ul {
+.dropdown:hover ul {
     display: block;
     position: absolute;
     margin-top: 3px;
@@ -757,6 +757,15 @@ footer {
     }
     li.dropdown:hover ul {
         display: none;
+    }
+    .nav-link span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+    }
+    .nav-link span.active {
+        transform: rotateX(180deg);
     }
 }
 @media screen and (max-width:768px) {
