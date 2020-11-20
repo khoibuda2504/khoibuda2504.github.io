@@ -1,18 +1,15 @@
 
 $(function(){
     $(".mobile-menu-btn").click(function(){
-		$('.main-menu').toggleClass('open');
-		$('.overlay').toggleClass('open')
-		$(this).toggleClass('active');
+        $('.main-menu').addClass('open');
+		$(this).addClass('active');
+    })
+    $('.main-menu').each(function(){
+		var tabs = $(this);
+        $(this).removeClass('open');
+        $('.mobile-menu-btn').removeClass('active')
     })
 })
-
-$(function(){
-    $(".main-menu li").click(function(){
-		$(this).toggleClass('open');
-    })
-})
-
 $(function(){
 	$(".search-tracking-leftside").each(function(){
 		var tabs = $(this);
@@ -25,7 +22,6 @@ $(function(){
 		})
 	})
 })
-
 $(function(){
 	$(".other-services__list").each(function(){
 		var tabs = $(this);
