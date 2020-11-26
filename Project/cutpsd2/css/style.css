@@ -414,6 +414,7 @@ a:hover {
   padding: 15px 0px;
   border: 2px solid #e1e1e1;
   font-size: 13px;
+  margin-left: auto;
 }
 
 .main-header .container {
