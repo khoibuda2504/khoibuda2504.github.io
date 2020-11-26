@@ -649,7 +649,7 @@ a:hover {
 }
 
 .intro-img {
-  width: 46px;
+  min-width: 46px;
   height: auto;
 }
 
