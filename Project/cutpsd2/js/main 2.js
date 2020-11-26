@@ -6,21 +6,11 @@ $(function(){
 		$(this).toggleClass('active');
 	})
 })
-$(function(){
-	$('.overlay').click(function(){
-		$('.main-menu').removeClass('open');
-		$(this).removeClass('open');
-		$('.mobile-menu-btn').removeClass('active')
-		
-	})
-})
+
 $(function(){
 	$('.dropdown1').each(function(){
 		$(this).find('> a').append("<i></i>");
 		$(this).find('i').addClass("fa fa-caret-down");
-		$(this).find('i').click(function(){
-			console.log('CLICKED;')
-		})
 	})
 })
 $(function(){
@@ -32,17 +22,17 @@ $(function(){
    
 $(function(){
 	$(".main-menu a").click(function(){
-		console.log('Clicked!')
 		$(this).find('i').toggleClass('active');
 		$(this).parent().toggleClass('open');
 	})  
 })
 $(function(){
-	$(".main-menu i").click(function(){
-		console.log('Clicked!!!!')
-		
+	$(".dropdown a").click(function(){
+		$(this).find('i').toggleClass('active');
 	})  
 })
+
+
 $(function(){
 	$(".tutorial").each(function(){
 		var tabs = $(this);

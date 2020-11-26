@@ -370,7 +370,7 @@ a:hover {
 }
 
 .top-header {
-  background-color: #B7B7B7;
+  background-color: #f8f8f8;
   padding: 10px 0px;
   font-size: 12px;
 }
@@ -413,6 +413,7 @@ a:hover {
 .main-header {
   padding: 15px 0px;
   border: 2px solid #e1e1e1;
+  font-size: 13px;
 }
 
 .main-header .container {
