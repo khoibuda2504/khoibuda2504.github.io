@@ -414,7 +414,6 @@ a:hover {
   padding: 15px 0px;
   border: 2px solid #e1e1e1;
   font-size: 13px;
-  margin-left: auto;
 }
 
 .main-header .container {
@@ -431,6 +430,7 @@ a:hover {
 
 .main-menu {
   text-transform: uppercase;
+  margin-left: auto;
 }
 
 .main-menu li {
@@ -646,6 +646,11 @@ a:hover {
   .intro .column {
     width: 100%;
   }
+}
+
+.intro-img {
+  width: 46px;
+  height: auto;
 }
 
 .intro__item {

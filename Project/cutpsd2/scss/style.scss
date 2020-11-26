@@ -78,7 +78,7 @@ body,html {
         padding: 15px 0px;
         border: 2px solid $borderColor;
         font-size: 13px;
-        margin-left: auto;
+        
         .container {
             display: flex;
             justify-content: space-between;
@@ -87,6 +87,7 @@ body,html {
     }
     &-menu {
         text-transform: uppercase;
+        margin-left: auto;
         li {
             display: inline-block;
             margin-left: 15px;
@@ -262,6 +263,10 @@ body,html {
         @include media (768px) {
             width: 100%
         }
+    }
+    &-img {
+        width: 46px;
+        height: auto;
     }
     &__item {
         display: flex;
