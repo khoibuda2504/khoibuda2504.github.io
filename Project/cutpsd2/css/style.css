@@ -670,7 +670,7 @@ a:hover {
 }
 
 .hero {
-  background-image: url("/images/truck.png");
+  background-image: url("../images/truck.png");
   background-position: center center;
   background-size: cover;
   height: 850px;
