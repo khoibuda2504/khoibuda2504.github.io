@@ -6,7 +6,14 @@ $(function(){
 		$(this).toggleClass('active');
 	})
 })
-
+$(function(){
+	$('.overlay').click(function(){
+		$('.main-menu').removeClass('open');
+		$(this).removeClass('open');
+		$('.mobile-menu-btn').removeClass('active')
+		
+	})
+})
 $(function(){
 	$('.dropdown1').each(function(){
 		$(this).find('> a').append("<i></i>");
