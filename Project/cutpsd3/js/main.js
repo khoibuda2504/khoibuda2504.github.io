@@ -19,10 +19,10 @@ $(function(){
 		  nextEl: '.swiper-button-next',
 		  prevEl: '.swiper-button-prev',
 		},
-		autoplay: {
-			delay: 1500,
-		},
-		loop: true,
+		// autoplay: {
+		// 	delay: 1500,
+		// },
+		// loop: true,
 		// And if we need scrollbar
 		scrollbar: {
 		  el: '.swiper-scrollbar',

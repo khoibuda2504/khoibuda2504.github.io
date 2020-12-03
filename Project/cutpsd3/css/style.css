@@ -851,6 +851,16 @@ a:hover {
   color: #ffffff;
 }
 
+.option__items .column {
+  width: 25%;
+}
+
+@media screen and (max-width: 991px) {
+  .option__items .column {
+    width: 50%;
+  }
+}
+
 .option__item {
   padding: 60px;
   text-align: center;

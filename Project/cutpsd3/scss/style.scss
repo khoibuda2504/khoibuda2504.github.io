@@ -504,6 +504,14 @@ body,html {
             }
         }
     }
+    &__items {
+        .column {
+            width: 25%;
+            @include media(991px) {
+                width: 50%;
+            }
+        }
+    }
     &__item {
         padding: 60px;
         text-align: center;
