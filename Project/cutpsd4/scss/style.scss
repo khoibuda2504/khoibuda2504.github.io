@@ -1080,6 +1080,7 @@
     .welcome-intro__title {
         padding-top: 50px;
     }
+    
     .column {
         width: 50%;
         @include media(500px) {
@@ -1093,11 +1094,22 @@
         &:not(:last-child) {
             border-bottom: 1px solid #e1e1e1;
         }
+        &:last-child {
+            .columns {
+                justify-content: flex-start;
+            }
+        }
       
     }
     &__item {
         display: flex;
         flex-wrap: wrap;
+        @include media(500px) {
+            &:last-child{
+                margin-top: 25px;
+            }
+        }
+        
     }
     &__img {
         width: 30%;

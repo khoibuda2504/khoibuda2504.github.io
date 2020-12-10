@@ -1769,12 +1769,24 @@ a:hover {
   border-bottom: 1px solid #e1e1e1;
 }
 
+.about-team__items:last-child .columns {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .about-team__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+  .about-team__item:last-child {
+    margin-top: 25px;
+  }
 }
 
 .about-team__img {
