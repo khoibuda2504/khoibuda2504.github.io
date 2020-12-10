@@ -1886,6 +1886,6 @@ a:hover {
   visibility: hidden;
 }
 
-.contact {
+.contact, .main {
   overflow: hidden;
 }
