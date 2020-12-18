@@ -2039,8 +2039,13 @@ svg {
         width: 50%;
     }
 }
-.agency {
+.agency, .checkout, .policy {
     .product__items {
         margin-left: 0px;
     }
+    // .product__item {
+    //     .column {
+    //         width: 100%;
+    //     }
+    // }
 }

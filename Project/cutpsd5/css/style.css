@@ -2906,6 +2906,6 @@ svg {
   width: 50%;
 }
 
-.agency .product__items {
+.agency .product__items, .checkout .product__items, .policy .product__items {
   margin-left: 0px;
 }
