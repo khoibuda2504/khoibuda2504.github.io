@@ -1279,8 +1279,14 @@ a:hover {
 }
 
 .product__items .column {
-  width: 50%;
+  width: 100%;
   padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .product__items .column {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1551,7 +1557,7 @@ a:hover {
 }
 
 .effect__items .column {
-  width: 33.33333%;
+  width: 33.33333% !important;
 }
 
 @media screen and (max-width: 540px) {
@@ -1753,7 +1759,7 @@ a:hover {
 }
 
 .healthy .column {
-  width: 33.33333%;
+  width: 33.33333% !important;
 }
 
 @media screen and (max-width: 540px) {
@@ -2894,4 +2900,12 @@ svg {
   .contact__items .column {
     width: 100%;
   }
+}
+
+.home .column, .product__list .column {
+  width: 50%;
+}
+
+.agency .product__items {
+  margin-left: 0px;
 }

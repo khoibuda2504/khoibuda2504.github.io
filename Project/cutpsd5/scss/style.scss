@@ -836,8 +836,11 @@
             padding-top: 15px;
         }
         .column {
-            width: 50%;
+            width: 100%;
             padding: 0;
+            @include media(991px) {
+                width: 50%;
+            }
             @include media(540px) {
                 width: 100%;
             }
@@ -1025,7 +1028,7 @@
             padding-bottom: 60px;
         }
         .column {
-            width: 100%/12*4;
+            width: 100%/12*4!important;
             @include media(540px) {
                 width: 100%;
                 padding-bottom: 20px;
@@ -1175,7 +1178,7 @@
             }
     }
     .column {
-        width: 100%/12*4;
+        width: 100%/12*4!important;
         @include media(540px) {
             width: 50%;
             padding-bottom: 20px;
@@ -2031,4 +2034,13 @@ svg {
         }
     }
 }
-
+.home, .product__list {
+    .column {
+        width: 50%;
+    }
+}
+.agency {
+    .product__items {
+        margin-left: 0px;
+    }
+}
