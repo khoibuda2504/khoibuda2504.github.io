@@ -1,6 +1,9 @@
 $(function(){
 	new WOW().init();
-	
+	// $(".value__items").lightGallery();
+	$('#test').lightGallery({
+		selector: '.value__img'
+	});
 })
 
 $(function() {
