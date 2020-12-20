@@ -162,6 +162,7 @@ body.dark .primary-title::after {
 @media screen and (max-width: 768px) {
   .right {
     width: 100%;
+    padding: 250px 15px 30px 15px;
   }
 }
 
@@ -237,6 +238,7 @@ body.dark .primary-title::after {
 .introduce__text {
   padding: 20px 0px;
   color: #616263;
+  text-align: justify;
 }
 
 .history__inner {
@@ -271,6 +273,7 @@ body.dark .primary-title::after {
   padding: 10px 0px;
   padding-left: 35px;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .card {
@@ -291,7 +294,7 @@ body.dark .primary-title::after {
 
 @media screen and (max-width: 470px) {
   .card {
-    left: 7%;
+    left: 1%;
   }
 }
 
@@ -302,49 +305,85 @@ body.dark .primary-title::after {
 
 @media screen and (max-width: 470px) {
   .card__inner {
-    padding: 50px 70px;
+    padding: 50px 80px;
   }
 }
 
 @media screen and (max-width: 430px) {
   .card__inner {
-    padding: 50px 60px;
+    padding: 50px 70px;
   }
 }
 
 @media screen and (max-width: 410px) {
   .card__inner {
-    padding: 50px 50px;
+    padding: 50px 65px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card__inner {
+    padding: 50px 60px;
   }
 }
 
 @media screen and (max-width: 389px) {
   .card__inner {
-    padding: 50px 40px;
+    padding: 50px 55px;
   }
 }
 
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 376px) {
   .card__inner {
-    padding: 50px 30px;
+    padding: 50px 47px;
   }
 }
 
-@media screen and (max-width: 347px) {
+@media screen and (max-width: 358px) {
   .card__inner {
-    padding: 50px 20px;
+    padding: 50px 38px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .card__inner {
+    padding: 50px 28px;
   }
 }
 
 @media screen and (max-width: 326px) {
   .card__inner {
+    padding: 50px 25px;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .card__inner {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 304px) {
+  .card__inner {
+    padding: 50px 15px;
+  }
+}
+
+@media screen and (max-width: 296px) {
+  .card__inner {
     padding: 50px 10px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 284px) {
   .card__inner {
-    padding: 40px 0px;
+    padding: 50px 5px;
+  }
+}
+
+@media screen and (max-width: 273px) {
+  .card__inner {
+    padding: 50px 0px;
   }
 }
 
@@ -380,7 +419,7 @@ body.dark .primary-title::after {
 .switch-container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 57px;
   cursor: pointer;
   font-size: 25px;
 }
