@@ -1,0 +1,15 @@
+$mainColor: #D79B48;
+$greyColor: #e1e1e1;
+$greyText: #43403B;
+$blackColor: #000;
+$redColor: #A60C1B;
+$backGroundGrey: #f8f8f8;
+$whiteColor: #ffffff;
+$textColor: #616263;
+$ccColor: #2EB872;
+$font: "CormorantGaraMond";
+@mixin media($point) {
+	@media screen and (max-width: $point) {
+		@content;
+	}
+}

@@ -1,34 +1,55 @@
 $(function(){
-    $(".mobile-menu-btn").click(function(){
-        $('.main-menu').addClass('open');
-        $(this).addClass('active');
-    })
-    $('.main-menu').click(function(){
-        $(this).removeClass('open');
-        $('.mobile-menu-btn').removeClass('active')
-    })
+	new WOW().init();
+	
 })
-$(function(){
-	$(".search-tracking-leftside").each(function(){
-		var tabs = $(this);
-		tabs.find(".search-tracking-leftside__header li").first().addClass("current");
-		tabs.find(".search-tracking-leftside__header li").click(function(){
-			var tab_id = $(this).attr('data-tab');
-			tabs.find(".search-tracking-leftside__header li").removeClass("current");
-			$(this).addClass('current');
-			tabs.find(tab_id).addClass('current');
+
+$(function() {
+
+	// Show scroll top btn on scroll
+	if ("#scroll-top".length >= 1) {
+		var scrollTopBtn = $("#scroll-top");
+		$(window).scroll(function() {
+			$(this).scrollTop() > 200
+				? scrollTopBtn.addClass("show")
+				: scrollTopBtn.removeClass("show");
+		});
+		scrollTopBtn.click(function(){
+			$("html, body").animate({ scrollTop: 0 }, "slow");
 		})
+	}
+});
+$(function(){
+    $(".user").click(function(){
+		$('.left').toggleClass('open');
+	})
+	$('.left').click(function() {
+		$('.left').removeClass('open')
+	})
+	$('.checkbox').change(function(){
+		$('body').toggleClass('dark')
+		$('.info').toggleClass('dark')
 	})
 })
 $(function(){
-	$(".other-services__list").each(function(){
-		var tabs = $(this);
-		tabs.find(".other-services__item").first().addClass('active');
-		tabs.find(".other-services__item").click(function(){
-			var tab_id = $(this).attr('data-tab');
-			tabs.find(".other-services__item").removeClass('active');
-			$(this).addClass('active');
-			tabs.find(tab_id).addClass('active');
-		})
-	})
+    var mySwiper = new Swiper('.swiper-container', {
+		
+		// If we need pagination
+		pagination: {
+		  el: '.swiper-pagination',
+		},
+	  
+		// Navigation arrows
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+		autoplay: {
+			delay: 1500,
+		},
+		loop: true,
+		// And if we need scrollbar
+		scrollbar: {
+		  el: '.swiper-scrollbar',
+		},
+	  })
 })
