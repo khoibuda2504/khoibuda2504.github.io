@@ -135,6 +135,20 @@ body {
         padding: 20px 0px;
         color: $textColor;
         text-align: justify;
+        a {
+            color: $textColor;
+            text-decoration: none;
+            &:hover {
+                color: black;
+            }
+        }
+        &.dark {
+            a {
+                &:hover {
+                    color: white;
+                }
+            }
+        }
     }
 }
 .history {

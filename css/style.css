@@ -241,6 +241,19 @@ body.dark .primary-title::after {
   text-align: justify;
 }
 
+.introduce__text a {
+  color: #616263;
+  text-decoration: none;
+}
+
+.introduce__text a:hover {
+  color: black;
+}
+
+.introduce__text.dark a:hover {
+  color: white;
+}
+
 .history__inner {
   display: -webkit-box;
   display: -ms-flexbox;

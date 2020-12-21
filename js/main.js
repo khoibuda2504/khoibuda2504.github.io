@@ -28,6 +28,7 @@ $(function(){
 	$('.checkbox').change(function(){
 		$('body').toggleClass('dark')
 		$('.info').toggleClass('dark')
+		$('.introduce__text').toggleClass('dark')
 	})
 })
 $(function(){
