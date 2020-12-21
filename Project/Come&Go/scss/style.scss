@@ -1,0 +1,1207 @@
+@import "variables";
+@import "components";
+
+.bg-grey {
+    background: $backGroundGrey;
+}
+.primary-heading {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+.area-heading {
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+.primary-btn {
+    cursor: pointer;
+    color: $whiteColor;
+    background: $mainColor;
+    padding: 11px 48px;
+    display: inline-block;
+    border-radius: 35px;
+    border: 1px solid transparent;
+    outline: 0;
+    &:hover {
+        background: $whiteColor;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+    }
+}
+.header {
+    background: $mainColor;
+    z-index: 9999;
+    position: relative;
+    &.fixed {
+        position: sticky;
+        top: 0;
+    }
+   
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    &__menu {
+        margin-left: auto;
+        padding: 19px 0px;
+        @include media(991px) {
+            position: fixed;
+            left: 100%;
+            top: -4%;
+            height: 120%;
+            transition: -0.95s;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 2;
+            &.open {
+                left: 0;
+            }
+        }
+       
+        ul {
+            @include media(991px) {
+                display: block;
+                width: 250px;
+                height: 100%;
+                overflow: auto;
+                background-color: #ffffff;
+                font-weight: 600;
+                padding-top: 20px;
+            }
+        }
+        li {
+            @include media(991px) {
+                color: $mainColor;
+                display: block;
+                a {
+                    display: block;
+                    padding: 10px;
+                    font-size: 18px;
+                }
+            }
+            display: inline-block;
+            color: $whiteColor;
+            font-size: 16px;
+        }
+        li:not(:last-child) {
+            margin-right: 30px;
+        }
+        a:hover {
+            color: #E9F679;
+        }
+    }
+    &__btn {
+        color: $whiteColor;
+        font-size: 16px;
+        @include media(991px) {
+            display: none;
+        }
+        i {
+            margin-left: 20px;
+            &:hover {
+                color: #E9F679;
+            }
+        }
+    }
+}
+.hamburger-btn {
+    @media screen and (min-width: 991px) {
+        display: none;
+    }
+    margin-left: auto;
+    .bar {
+        background: $whiteColor;
+        &::before, &::after {
+            background: $whiteColor;
+        }
+    }
+}
+.hero {
+    background: url('../images/hero.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        color: $whiteColor;
+        text-align: center;
+        padding-top: 217px;
+        padding-bottom: 203px;
+    }
+    &__title {
+        font-family: 'Raleway';
+        font-size: 72px;
+        font-weight: 300;
+        padding: 0px 15px;
+        @include media(991px) {
+            font-size: 60px;
+        }
+    }
+    &__sub_title {
+        font-size: 30px;
+        font-weight: 300;
+        padding: 0px 15px;
+    }    
+}
+.blog {
+    .primary-heading {
+        padding-top: 68px;
+        padding-bottom: 10px;
+    }
+    .welcome-intro__icon {
+        margin-bottom: -35px;
+        text-align: center;
+    }
+    &__cards {
+        padding: 60px 0px;
+    }
+    .column {
+        width: calc(100%/12*4);
+        @include media(768px) {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    &__card {
+        background: $whiteColor;
+        box-shadow: 0px 13px 21px rgba(0,0,0,0.2);
+        height: 100%;
+        &__desc {
+            padding: 20px 20px 25px 30px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__text {
+            color: $greyText;
+            padding-top: 9px;
+            padding-bottom: 7px;
+            font-size: 14px;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+        &__more {
+            color: $mainColor;
+            font-weight: 500;
+            font-size: 14px;
+            transition: 0.4s;
+            &:hover {
+                color: #17673b;
+                transform: scale(1.03);
+            }
+        }
+        &__img {
+            overflow: hidden;
+            transition: 0.4s;
+            :hover {
+                transform: scale(1.05);
+            }
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+.welcome-intro {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+    &__title {
+        font-family: 'Raleway';
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 10px;
+        span {
+            color: $mainColor;
+        }
+    }
+    &__icon {
+        text-align: center;
+    }
+    &__icon {
+        position: relative;
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            background: #e1e1e1;
+            height: 1px;
+            width: 6%;
+            content: '';
+        }
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: 42%;
+            background: #e1e1e1;
+            height: 1px;
+            width: 6%;
+            content: '';
+        }
+    }
+    &__text {
+        max-width: 830px;
+        margin: 0 auto;
+        color: $greyText;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+.asian-area {
+    padding-top: 63px;
+    margin-bottom: 62px;
+    .column {
+        width: calc(100%/12*4);
+        @include media(768px) {
+            width: 50%;
+        }
+    }
+    &__cards {
+        padding-top: 28px;
+    }
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        height: 100%;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &--bg1 {
+            background: url(../images/asian-area1.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        &--bg2 {
+            background: url(../images/asian-area2.png);
+            background-size: cover;
+            background-position: center center;
+        }
+        &--bg3 {
+            background: url(../images/asian-area3.png);
+            background-size: cover;
+            background-position: center center;
+            @include media(768px) {
+                margin-top: 30px;
+            }
+        }
+
+    }
+    &__title {
+        font-size: 36px;
+        font-family: 'Raleway';
+        padding: 112px;
+        color: $whiteColor;
+        @include media(500px) {
+            font-size: 28px;
+        }
+    }
+}
+.vietnam-area {
+    .column {
+        width: 25%;
+        @include media(768px) {
+            width: 50%;
+        }
+    }
+    &__cards {
+        padding-top: 30px;
+        padding-bottom: 68px;
+    }
+    &__card {
+        background: $whiteColor;
+        box-shadow: 0px 13px 21px rgba(0,0,0,0.2);
+        transition: 0.4s;
+        height: 100%;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__img {
+        img {
+            height: auto;
+        width: 100%;
+        }
+    }
+    &__desc {
+        padding: 20px
+    }
+    &__place {
+        font-family: 'Raleway';
+        font-weight: 700;
+    }
+    &__text {
+        font-family: 'Raleway';
+        color: $greyText;
+        padding: 8px 0px;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+    &__price {
+        span {
+            color: $mainColor;
+        }
+    }
+}
+.hotdeal-area {
+    .column {
+        width: 25%;
+        @include media (768px) {
+            width: 50%;
+        }
+    }
+    &__cards {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    &__card {
+        background: $whiteColor;
+        box-shadow: 0px 13px 21px rgba(0,0,0,0.2);
+        transition: 0.4s;
+        height: 100%;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__img {
+        img {
+            height: auto;
+        width: 100%;
+            display: block;
+        }
+    }
+    &__desc-top {
+        background: $mainColor;
+        color: $whiteColor;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+    &__desc-bottom {
+        font-weight: 700;
+        font-family: 'Raleway';
+        padding: 20px;
+    }
+}
+.sub-hero {
+    margin-top: 50px;
+    background: url(../images/sub-hero.png);
+    background-size: cover;
+    background-position: center center;
+    &-inner {
+    padding-top: 90px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    &-desc {
+        width: 50%;
+        @include media(768px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &-sub-title {
+        padding-top: 59px;
+        font-size: 36px;
+        font-family: 'Raleway';
+        color: $whiteColor;
+    }
+    &-title {
+        font-size: 72px;
+        font-family: 'Raleway';
+        color: #E9F679;
+        margin-top: -10px;
+        padding-bottom: 18px;
+    }
+    &-text {
+        max-width: 400px;
+        color: $whiteColor;
+        @include media(768px) {
+            max-width: 100%;
+        }
+    }
+    &-video {
+        margin-left: auto;
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        padding-top: 32.5%;
+        @include media(768px) {
+            margin-left: 0;
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 70%;
+        }
+        @include media(500px) {
+            width: 85%;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.reason {
+    background: $backGroundGrey;
+    text-align: center;
+    .primary-heading {
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
+    .column {
+        width: 25%;
+        @include media(768px) {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    &__cards {
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    &__card{
+        height: 100%;
+    }
+    &__title {
+        font-family: 'Raleway';
+        font-size: 18px;
+        padding-top: 12px;
+        padding-bottom: 4px;
+    }
+    &__text {
+        color: $greyText;
+    }
+}
+.register {
+    margin-top: 30px;
+    background: url(../images/register.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    &__gradient{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 72%;
+        background: linear-gradient(90deg, rgba(47,153,97,0.9) 50%, rgba(71,172,121,0));
+    }
+    &__form {
+        padding-top: 80px;
+        max-width: 570px;
+        color: $greyText;
+    }
+    &__cols {
+        display: flex;
+        
+        margin-bottom: 10px;
+        @include media(500px) {
+            margin-bottom: 0px;
+            flex-wrap: wrap;
+        }
+    }
+    &__col {
+        width: 50%;
+        @include media(500px) {
+            width: 100%;
+            
+            margin-bottom: 10px;
+        }
+        &:first-child {
+            margin-right: 15px;
+            @include media(500px) {
+                margin-right: 0px;
+            }
+        }
+    }
+    &__input {
+        input {
+            padding: 15px 0px 15px 20px;
+            width: 100%;
+        }
+    }
+    &__textarea {
+        width: 100%;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    &__btn {
+        padding-top: 15px;
+        padding-bottom: 70px;
+        text-align: center;
+        & > button {
+            padding: 11px 68px;
+            background: #33D146;
+        }
+    }
+}
+.footer {
+    background: $whiteColor;
+    &__inner {
+        padding-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__logo {
+        width: 25%;
+        @include media(768px) {
+            width: 50%;
+        }
+        @include media(500px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            @include media(500px) {
+                width: 90%;
+                height: 80%;
+            }
+        }
+    }
+    &__info {
+        padding-left: 10px;
+        width: 33%;
+        @include media(768px) {
+            width: 50%;
+        }
+        @include media(500px) {
+            width: 100%;
+        }
+    }
+    &__map {
+        width: 42%;
+        margin-left: auto;
+        @include media(768px) {
+            width: 100%;
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+    &__cols {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &__col {
+        width: 50%;
+        padding-bottom: 10px;
+        input {
+            width: 100%;
+            background: $backGroundGrey;
+            padding: 10px 15px;
+        }
+        &:first-child {
+            padding-right: 10px;
+        }
+    }
+    &__text {
+        color: $greyText;
+        padding-bottom: 15px;
+        &--green {
+            color: $mainColor;
+        }
+        &:last-child {
+            padding-bottom: 60px
+        }
+    }
+    &__area {
+        width: 100%;
+        textarea {
+            width: 100%;
+            background: $backGroundGrey;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+      
+    }
+    &__sign {
+        font-size: 12px;
+        color: $whiteColor;
+        text-align: center;
+        background: $mainColor;
+        padding: 12px 0px;
+        span {
+            font-weight: 600;
+        }
+    }
+    &__btn {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 70px;
+        button {
+            padding: 11px 48px;
+            border-radius: 30px;
+            }
+        }
+    }
+.detail-hero {
+    background: url('../images/detail-bg.png');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 184px;
+    &__text {
+        color: $whiteColor;
+        font-family: 'Raleway';
+        font-size: 48px;
+        font-weight: 400;
+    }
+}
+.detail-option-card {
+    &__inner {
+        padding: 50px 70px;
+        background: $whiteColor;
+        box-shadow: 0px 13px 21px rgba(0,0,0,0.2);
+        @include media(768px) {
+            padding: 0px;
+        }
+    }
+    &__title {
+        font-size: 36px;
+        font-family: 'Raleway';
+        font-weight: 400;
+        text-align: center;
+        span {
+            color: $mainColor;
+        }
+    }
+    &__icon {
+        text-align: center;
+    }
+    &__sub-title {
+        font-size: 20px;
+        font-family: 'Raleway';
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    &__desc {
+        color: $greyText;
+    }
+    &__item {
+        padding-left: 30px;
+        padding-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        @include media(768px) {
+            padding-left: 0px;
+        }
+    }
+    &__time {
+        width: 7%;
+        font-weight: 500;
+        @include media(500px) {
+            width: 100%;
+        }
+    }
+    &__text {
+        color: $greyText;
+        width: 93%;
+        @include media(500px) {
+            width: 100%;
+        }
+    }
+    &__event {
+        padding-left: 100px;
+        padding-top: 20px;
+        @include media(768px) {
+            padding-left: 30px;
+        }
+        p {
+            font-weight: 500;
+        }
+        span {
+            color: $greyText;
+        }
+    }
+    &__footer {
+        background: $mainColor;
+        padding-top: 7px;
+        padding-bottom: 10px;
+        color: $whiteColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media (500px) {
+            padding: 0px;
+            font-size: 13px;
+        }
+    }
+    &__price {
+        padding-left: 58px;
+        @include media(768px) {
+            padding-left: 0px;
+        }
+        span {
+            font-size: 20px;
+            color: #E9F679;
+            @include media(768px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__way {
+        padding-right: 62px;
+        @include media(768px) {
+            padding-right: 0px;
+        }
+    }
+}
+.luxury {
+    &-hero {
+        background: url('../images/luxury-bg.png');
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        
+        &-tailor {
+            background: url(../images/tailor-bg-1.png);
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            
+        }
+    }
+    &__bread {
+        padding-top: 250px;
+        padding-bottom: 15px;
+        font-family: 'Raleway';
+        color: $whiteColor;
+        position: relative;
+        z-index: 1;
+        span {
+            color: #E9F679;
+        }
+    }
+    &__overlay {
+        background: rgba(0,0,0,0.6);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 16%;
+    }
+}
+.luxury-banner {
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+        // overflow: hidden;
+    }
+    &__title {
+        padding-top: 48px;
+        font-size: 36px;
+        font-family: 'Raleway';
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    
+    &-desc {
+        width: 33%;
+        @include media(991px) {
+            width: 50%;
+        }
+        @include media(500px) {
+            width: 100%;
+        }
+    }
+    &-img {
+        padding-left: 45px;
+        width: 67%;
+        height: auto;
+        @include media(991px) {
+            width: 50%;
+        }
+        @include media(500px) {
+            width: 100%;
+            padding-left: 0px;
+        }
+        img {
+            height: auto;
+            display: block;
+            @include media(500px) {
+                width: 100%;
+                height: 100%;
+                padding: 15px 0px;
+            }
+        }
+    }
+    &__icon {
+        position: relative;
+        &:after {
+            position: absolute;
+            bottom: 41%;
+            left: 12%;
+            height: 1px;
+            background: #e1e1e1;
+            width: 17%;
+            content: '';
+        }
+    }
+    &__text {
+        padding-top: 30px;
+        color: $greyText;
+    }
+}
+.luxury-info {
+    background: url('../images/luxury-info.png');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: -2;
+    &__inner {
+        padding-top: 70px;
+        padding-bottom: 55px;
+        max-width: 400px;
+        margin-left: auto;
+        @include media(1024px) {
+            max-width: 100%;
+        }
+    }
+    &__text {
+        padding-bottom: 20px;
+        padding-left: 30px;
+        color: $whiteColor;
+        @include media(500px) {
+            padding-left: 0px;
+        }
+        span {
+            color: #E9F679;
+        }
+    }
+    &__overlay {
+        background: rgba(37, 165, 95, 0.9);
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100%;
+        @include media(1024px) {
+            width: 100%;
+        }
+    }
+}
+.luxury-area {
+    padding-top: 55px;
+    margin-bottom: -9px;
+    background: $backGroundGrey;
+    .column {
+        width: 25%;
+        @include media(768px){
+            width: 50%;
+        }
+    }
+}
+.tailor-made {
+    padding-top: 60px;
+    padding-bottom: 45px;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item:not(:last-child) {
+        padding-right: 30px;
+    }
+    &__item {
+        height: auto;
+        width: 35%;
+        @include media(768px) {
+            width: 100%;
+        }
+        &:last-child {
+            width: 30%;
+            @include media(768px) {
+                width: 100%;
+            }
+        }
+        p {
+            font-size: 16px;
+            padding-bottom: 21px;
+        }
+        
+        img {
+            display: block;
+            height: auto;
+            @include media(768px) {
+            width: 100%;
+            }
+        }
+    }
+    &__text {
+        color: $greyText;
+        padding-bottom: 23px;
+        span {
+            font-weight: 400;
+            color: $mainColor;
+        }
+        &--black {
+            padding-bottom: 20px;
+            span {
+                font-weight: 400;
+                color: $mainColor;
+            }
+        }
+    }
+}
+.tailor-hero {
+    background: url(../images/tailor-hero.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: -2;
+    &__container{
+        max-width: 800px;
+        margin-left: auto;
+        padding-top: 120px;
+        @include media(500px) {
+            padding-top: 0px;
+        }
+    }
+    &__inner {
+        padding: 60px 30px;
+        padding-bottom: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        background: rgba(37, 165, 95, 0.9);
+        @include media(500px) {
+            padding: 0;
+        }
+    }
+    &__item {
+        width: 50%;
+        @include media(500px) {
+            width: 100%;
+        }
+    }
+    &__item:first-child {
+        padding-right: 30px;
+    }
+    &__text {
+        color: $whiteColor;
+        padding-bottom: 21px;
+    }
+    
+}
+.tailor-about {
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__note {
+        width: 31.7%;
+        padding: 55px 30px 35px 30px;
+        background: url(../images/tailor-about.png);
+        background-position: center center;
+        background-size: cover;
+        color: $mainColor;
+        font-size: 16px;
+        position: relative;
+        @include media(768px) {
+            width: 100%;
+            margin-top: 30px;
+        }
+        @include media(500px) {
+            padding: 55px 0px 35px 0px;
+        }
+        img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 68%;
+            width: 45%;
+        }
+    }
+    &__text {
+        background: $whiteColor;
+        width: 68.3%;
+        padding: 55px 30px 35px 30px;
+        color: $greyText;
+        @include media(768px) {
+            width: 100%;
+        }
+        @include media(500px) {
+            padding: 55px 0px 35px 0px;
+        }
+        p {
+            padding-bottom: 21px;
+        }
+    }
+    &-area {
+        padding-top: 55px;
+        margin-bottom: -5px;
+        .column {
+            width: 25%;
+            @include media(768px) {
+                width: 50%;
+            }
+        }
+    }
+}
+.about {
+    padding-top: 50px;
+    .welcome-intro__icon {
+        margin-bottom: 21px;
+    }
+    &__text {
+        color: $greyText;
+        padding-bottom: 20px;
+        text-align: center;
+        &:last-child {
+            padding-bottom: 55px;
+        }
+    }
+}
+.about-team {
+    background: url(../images/about-team-bg.png);
+    background-position: center center;
+    background-size: cover;
+    .welcome-intro__title {
+        padding-top: 50px;
+    }
+    
+    .column {
+        width: 50%;
+        @include media(500px) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+    &__items {
+        padding-top: 27px;
+        padding-bottom: 28px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #e1e1e1;
+        }
+        &:last-child {
+            .columns {
+                justify-content: flex-start;
+            }
+        }
+      
+    }
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        @include media(500px) {
+            &:last-child{
+                margin-top: 25px;
+            }
+        }
+        
+    }
+    &__img {
+        width: 30%;
+        img {
+            height: auto;
+        width: 100%;
+        }
+    }
+    &__desc {
+        width: 70%;
+        padding-left: 30px;
+    }
+    &__name {
+        font-family: 'Raleway';
+        font-size: 20px;
+    }
+    &__job {
+        font-family: 'Raleway';
+        color: $mainColor;
+    }
+    &__text {
+        color: $greyText;
+        padding-top: 10px;
+    }
+    &__mail {
+        padding-top: 13px;
+        span {
+            color: $mainColor;
+        }
+    }
+}
+.mt {
+    margin-top: 0px;
+}
+.destination {
+    .column {
+        width: 100%/12*4;
+        @include media(768px) {
+            width: 50%;
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+    &.blog__cards {
+        padding-top: 10px;
+        padding-bottom: 95px;
+    }
+}
+// slider
+.swiper-button-prev, .swiper-button-next {
+    width: 30px!important;
+    height: 30px!important;
+    top: 66%!important;
+    background: #ebebeb!important;
+    color: $mainColor!important;
+    font-size: 18px;
+    border-radius: 100%!important;
+    outline: transparent!important;
+    &:hover {
+        color: $whiteColor!important;
+        background: $mainColor!important;
+    }
+    &::after {
+        display: none;
+    }
+}
+.swiper-button-prev {
+    right: 0px!important;
+    left: auto!important;
+    margin-right: 35px;
+}
+.swiper-button-next {
+    right: 0px!important;
+}
+.area-slider {
+    position: relative;
+}
+.wow {
+    visibility: hidden;
+}
+.contact, .main {
+    overflow: hidden;
+}
+
