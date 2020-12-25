@@ -182,9 +182,6 @@
     width: 100%;
     z-index: 900;
     background: transparent;
-    &.fixed {
-        // position: fixed;
-    }
     &__logo {
         background-image: url(../images/header-logo-red.png);
         top: 0;
@@ -302,6 +299,9 @@
             }
         }
         li {
+            display: inline-block;
+            color: $whiteColor;
+            font-size: 16px;
             &.dropdown1 {
                 position: relative;
                 &:hover {
@@ -426,9 +426,7 @@
                     font-size: 18px;
                 }
             }
-            display: inline-block;
-            color: $whiteColor;
-            font-size: 16px;
+           
         }
         li:not(:last-child) {
             margin-right: 30px;
@@ -732,7 +730,7 @@
                 padding-top: 30px;
             }
         }
-        .banner__gram{
+        .banner__gram {
             padding-top: 25px;
             justify-content: space-between;
             @include media(540px) {
@@ -840,9 +838,6 @@
             padding: 0;
             @include media(991px) {
                 width: 50%;
-            }
-            @include media(540px) {
-                width: 100%;
             }
         }
     }
@@ -1571,6 +1566,10 @@
                     padding-bottom: 20px;
                 }
             }
+            @include media(500px) {
+                width: 100%;
+                padding-bottom: 20px;
+            }
         }
     }
     &__item {
@@ -1634,7 +1633,7 @@
         justify-content: space-between;
 
         @include media(768px) {
-            justify-content: start;
+            justify-content: center;
         }
     }
     .checkmark {
@@ -1728,6 +1727,9 @@
             height: 1px;
             background: rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            @include media(768px) {
+                width: 100%;
+            }
         }
     }
     &__count {
@@ -1736,6 +1738,9 @@
         font-family: $font;
         color: $blackColor;
         padding-top: 15px;
+        @include media(768px) {
+            text-align: center;
+        }
     }
     &__shop {
         display: flex;
@@ -1744,6 +1749,8 @@
         padding-top: 5px;
         @include media(768px) {
             justify-content: start;
+            flex-direction: column;
+            align-items: center;
         }
         &-L {
             width: 60%;
@@ -1753,7 +1760,10 @@
             display: flex;
             justify-content: space-between;
             @include media(768px) {
-                width: 32%;
+                width: 100%;
+                justify-content: start;
+                flex-direction: column;
+                background: transparent;
             }
         }
         &-R {
@@ -1762,7 +1772,8 @@
             font-weight: bold;
             color: $redColor;
             @include media(768px) {
-                width: 20%;
+                width: 32%;
+                padding-top: 20px;
             }
             & > img {
                 cursor: pointer;
@@ -1775,6 +1786,13 @@
             align-items: center;
             & > img {
                 cursor: pointer;
+                @include media(768px) {
+                    padding: 5px 30px;
+                }
+            }
+            @include media(768px) {
+                width: 100%;
+                justify-content: center;
             }
         }
         &-btn {
@@ -1790,7 +1808,11 @@
             font-weight: bold;
             &:hover {
                 background: $whiteColor;
-                
+            }
+            @include media(768px) {
+                text-align: center;
+                margin: 0px auto;
+                width: 35%;
             }
         }
     }
@@ -2028,7 +2050,10 @@ svg {
     &__items {
         .column {
             width: 100%/12*4;
-            @include media(320px) {
+            @include media(768px) {
+                width: 50%;
+            }
+            @include media(500px) {
                 width: 100%;
             }
         }
@@ -2037,15 +2062,27 @@ svg {
 .home, .product__list {
     .column {
         width: 50%;
+        @include media(500px) {
+            width: 100%;
+        }
+    }
+}
+.checkout, .product__list {
+    .column {
+        @include media(768px) {
+            width: 100%;
+        }
     }
 }
 .agency, .checkout, .policy {
     .product__items {
         margin-left: 0px;
     }
-    // .product__item {
-    //     .column {
-    //         width: 100%;
-    //     }
-    // }
+}
+.policy {
+    .column {
+        @include media(768px) {
+            width: 100%;
+        }
+    }
 }
