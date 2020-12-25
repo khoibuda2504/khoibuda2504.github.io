@@ -596,14 +596,54 @@ a:hover {
           flex-direction: column;
   z-index: 999;
   background-color: #ffffff;
-  border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-@media screen and (max-width: 991px) {
-  .banner__tag {
-    display: none;
-  }
+.banner__tag.slide {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+}
+
+.banner__slide {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 31%;
+  width: 44px;
+  height: 44px;
+  z-index: 999;
+  background-color: #05406D;
+  border-top-left-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.35s linear;
+  transition: 0.35s linear;
+}
+
+.banner__slide i {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner__slide i.active {
+  -webkit-transform: translateX(-7px) rotateY(180deg);
+          transform: translateX(-7px) rotateY(180deg);
+}
+
+.banner__slide.slide {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
 }
 
 .banner__language {

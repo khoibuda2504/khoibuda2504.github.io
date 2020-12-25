@@ -42,6 +42,11 @@ $(function(){
 		$('.history__list').toggleClass('open');
 		$(this).toggleClass('active');
 	})
+	$('.banner__slide').click(function() {
+		$('.banner__tag').toggleClass('slide');
+		$(this).find('i').toggleClass('active');
+		$(this).toggleClass('slide');
+	})
 })
 $(function(){
     var mySwiper = new Swiper('.swiper-container', {
@@ -65,8 +70,6 @@ $(function(){
 		  el: '.swiper-scrollbar',
 		},
 	  })
-	  
-	  
 })
 
 
