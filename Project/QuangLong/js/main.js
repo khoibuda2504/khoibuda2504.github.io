@@ -7,17 +7,37 @@ $(function(){
 })
 
 $(function() {
+	//Smooth Scrolling
+	$(".scroll").on("click", function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$("html, body").animate(
+				{
+					scrollTop: $(hash).offset().top
+				},
+				"slow",
+				"linear",
+				function() {
+					window.location.hash = hash;
+				}
+			);
+		}
+	});
 
 	// Fixed menu on scroll
 	var header = $("header");
-	if(header.length >=  1){
-		var sticky = header.offset().top;
+	var main = $("#main");
+	if($("#header").length >=  1){
+		var sticky = header.height();
 		$(window).scroll(function(){
-			if($(this).scrollTop() > sticky){
+			if($(this).scrollTop() > 145){
 				header.addClass("fixed");
+				// main.css("margin-top", header.height());
 			}
 			else{
 				header.removeClass("fixed");
+				// main.css("margin-top", 0);
 			}
 		});
 	}

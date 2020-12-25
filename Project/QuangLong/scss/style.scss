@@ -182,6 +182,35 @@
     width: 100%;
     z-index: 900;
     background: transparent;
+    &.fixed {
+        position: fixed;
+        background: $redColor;
+        .header__logo, .header__btn--hide, .header__title {
+            display: none;
+        }
+        .header__nav {
+            margin-left: 0;
+        }
+        .header__btn--show {
+            display: flex!important;
+            padding-top: 0px;
+            @include media(1150px) {
+                display: none!important;
+            }
+        }
+        .header__cate {
+            margin-bottom: 10px;
+        }
+        .header__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+        }
+    }
+    &__btn--show {
+        display: none!important;
+    } 
     &__logo {
         background-image: url(../images/header-logo-red.png);
         top: 0;
