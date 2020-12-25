@@ -644,6 +644,7 @@ a:hover {
 .banner__slide.slide {
   -webkit-transform: translateX(15px);
           transform: translateX(15px);
+  border-bottom-left-radius: 10px;
 }
 
 .banner__language {
