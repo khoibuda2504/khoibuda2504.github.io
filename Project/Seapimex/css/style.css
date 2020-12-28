@@ -336,6 +336,10 @@ a:hover {
   }
 }
 
+.header__nav li.hide {
+  margin: 0px 77px;
+}
+
 @media screen and (max-width: 991px) {
   .header__nav li.hide {
     display: none;
@@ -579,8 +583,29 @@ a:hover {
 
 .banner__brand {
   position: absolute;
-  top: 24%;
-  left: 12%;
+  top: 29%;
+  left: 14%;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 200px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+.banner__text {
+  position: absolute;
+  top: 40%;
+  left: -2%;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 72px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  line-height: 1.48;
+  letter-spacing: 12px;
 }
 
 .banner__tag {
@@ -688,13 +713,19 @@ a:hover {
   margin-bottom: 12px;
 }
 
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .product {
   background-image: url("../images/home-wave.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 131px;
 }
 
 .product::after {
@@ -703,7 +734,7 @@ a:hover {
   width: 300%;
   background: #C3D1DC;
   content: '';
-  top: 10%;
+  top: 6.5%;
   left: 0;
 }
 
@@ -729,13 +760,12 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
   padding-bottom: 30px;
   font-weight: bold;
 }
 
 .product-wrapper {
-  padding-top: 60px;
+  padding-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,6 +804,8 @@ a:hover {
 
 .product-L__card--blue {
   background: #05406D;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
 }
 
 .product-L__card--border {
@@ -833,7 +865,7 @@ a:hover {
   color: #ffffff;
   background: #188EFA;
   border: 1px solid transparent;
-  padding: 13px 37px;
+  padding: 13px 21px;
   text-transform: uppercase;
   border-radius: 5px;
 }
@@ -860,6 +892,16 @@ a:hover {
 .product__list li {
   display: inline-block;
   padding: 0px 10px;
+}
+
+.product__list li.active, .product__list li:hover {
+  border-bottom: 2px solid #05406D;
+  padding-top: 2px;
+}
+
+.product__list li.active a, .product__list li:hover a {
+  color: #05406D;
+  font-weight: bold;
 }
 
 .product-R {
@@ -891,12 +933,12 @@ a:hover {
 
 .product-R__card {
   height: 100%;
-  overflow: hidden;
 }
 
 .product-R__img {
   position: relative;
   text-align: center;
+  overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -926,6 +968,7 @@ a:hover {
   font-weight: bold;
   cursor: pointer;
   position: relative;
+  margin-top: 10px;
 }
 
 .product-R__title:after {
@@ -959,27 +1002,33 @@ a:hover {
 }
 
 .reason {
-  background-image: url("../images/home-reason.pn");
+  background-image: url("../images/home-reason.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 130px;
-  padding-bottom: 55px;
+  padding-bottom: 94px;
   position: relative;
   z-index: 1;
 }
 
 .reason::after {
-  background: url("../images/reason-overlay.png");
-  background-size: cover;
-  background-position: center center;
+  background-color: #05406D;
+  opacity: 0.7;
+  -webkit-backdrop-filter: blur(24px) brightness(115%);
+          backdrop-filter: blur(24px) brightness(115%);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   content: '';
-  z-index: -1;
+  z-index: 1;
+}
+
+.reason__inner {
+  position: relative;
+  z-index: 2;
 }
 
 .reason .column {
@@ -998,8 +1047,9 @@ a:hover {
   font-family: "Oswald";
   color: #ffffff;
   padding-bottom: 15px;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
+  margin-top: -15px;
 }
 
 .reason__title::after {
@@ -1017,6 +1067,7 @@ a:hover {
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 15px;
+  padding-right: 30px;
 }
 
 .reason .row {
@@ -1025,12 +1076,25 @@ a:hover {
           align-items: center;
 }
 
+.reason .custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .reason-L {
-  width: 20%;
+  width: 10%;
+  margin-right: 10px;
 }
 
 .reason-R {
-  width: 80%;
+  width: 90%;
 }
 
 .reason__sub-title {
@@ -1047,14 +1111,8 @@ a:hover {
   padding-bottom: 30px;
 }
 
-.reason .row-pb {
-  padding-bottom: 70px;
-}
-
-@media screen and (max-width: 500px) {
-  .reason .row-pb {
-    padding-bottom: 30px;
-  }
+.reason .row-pt {
+  padding-top: 15px;
 }
 
 .export {
@@ -1101,8 +1159,8 @@ a:hover {
   overflow: hidden;
   margin-left: 25px;
   background: #ffffff;
-  -webkit-box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 20px rgba(55, 84, 170, 0.1);
+          box-shadow: 10px 10px 20px rgba(55, 84, 170, 0.1);
 }
 
 @media screen and (max-width: 500px) {
@@ -1150,6 +1208,7 @@ a:hover {
   color: #05406D;
   padding: 30px 0px;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .export__areas .column {
@@ -1336,6 +1395,7 @@ a:hover {
   text-transform: uppercase;
   color: #05406D;
   text-align: center;
+  font-weight: bold;
 }
 
 .exp__text {
@@ -1496,6 +1556,10 @@ a:hover {
   margin: 0 15px;
 }
 
+.footer__list li a:hover {
+  color: #188EFA;
+}
+
 .footer__terms {
   text-transform: uppercase;
   margin-top: 50px;
@@ -1504,6 +1568,10 @@ a:hover {
 .footer__terms li {
   display: inline-block;
   margin: 0px 15px;
+}
+
+.footer__terms li a:hover {
+  color: #188EFA;
 }
 
 .footer__overlay {
@@ -3184,14 +3252,11 @@ a:hover {
 
 .contact__suggest select {
   width: 100%;
-  background: white;
+  background-color: white;
   padding: 20px 0px 20px 20px;
-}
-
-.contact__suggest img {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  background-image: url("../images/select.png");
+  background-repeat: no-repeat;
+  background-position: 97%;
 }
 
 .contact__forms {
