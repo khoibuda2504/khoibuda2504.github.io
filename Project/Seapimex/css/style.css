@@ -417,6 +417,13 @@ a:hover {
 
 .header__nav li.dropdown1 > i {
   color: #ffffff;
+}
+
+.header__nav li.dropdown1 > i:hover {
+  color: #188EFA;
+}
+
+.header__nav li.dropdown1 > i:active {
   pointer-events: none;
 }
 
@@ -1939,6 +1946,7 @@ a:hover {
   font-family: "Oswald";
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

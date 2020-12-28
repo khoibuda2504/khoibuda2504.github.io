@@ -157,7 +157,12 @@ display: flex;
                 }
                 & > i {
                     color: $whiteColor;
-                    pointer-events: none;
+                    &:hover {
+                        color: $lightBlueColor;
+                    }
+                    &:active {
+                        pointer-events: none;
+                    }
                     @include media(991px) {
                         color: $mainColor;
                         pointer-events: auto;
@@ -1247,6 +1252,7 @@ display: flex;
         font-family: $font;
         font-weight: bold;
         text-transform: uppercase;
+        cursor: pointer;
         @include media(768px) {
             font-size: 24px;
             text-align: center;
