@@ -619,7 +619,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 999;
+  z-index: 1;
   background-color: #ffffff;
   border-bottom-left-radius: 10px;
   -webkit-transition: 0.5s;
@@ -868,6 +868,7 @@ a:hover {
   padding: 13px 21px;
   text-transform: uppercase;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -1457,7 +1458,7 @@ a:hover {
 .exp__blue-text {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
 }
@@ -1549,6 +1550,7 @@ a:hover {
   padding: 30px 0px;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
+  font-weight: bold;
 }
 
 .footer__list li {
@@ -1563,6 +1565,8 @@ a:hover {
 .footer__terms {
   text-transform: uppercase;
   margin-top: 50px;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .footer__terms li {
@@ -1604,8 +1608,15 @@ a:hover {
 
 .about-banner__brand {
   position: absolute;
-  bottom: -30%;
-  left: 12%;
+  bottom: -13%;
+  left: 14%;
+  text-transform: uppercase;
+  font-size: 200px;
+  font-weight: bold;
+  font-family: "Oswald";
+  color: #ffffff;
+  opacity: 0.4;
+  text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (max-width: 768px) {
@@ -1662,12 +1673,17 @@ a:hover {
 .history__list li {
   display: inline-block;
   margin-right: 20px;
-  padding: 22px 0px;
+  padding: 20px 0px;
   color: #666666;
+  font-weight: bold;
 }
 
 .history__list li.active, .history__list li:hover {
   border-bottom: 2px solid #05406D;
+}
+
+.history__list li.active a, .history__list li:hover a {
+  color: #05406D;
 }
 
 .history__banner img {
@@ -1722,6 +1738,7 @@ a:hover {
   text-transform: uppercase;
   color: #666666;
   margin-left: -50px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
@@ -1751,6 +1768,7 @@ a:hover {
 
 .history__sub-title span {
   color: #188EFA;
+  font-weight: bold;
 }
 
 .history__text {
@@ -2031,6 +2049,7 @@ a:hover {
 .organ__job {
   font-size: 16px;
   color: #05406D;
+  font-weight: bold;
 }
 
 .organ__blue {
@@ -2188,6 +2207,9 @@ a:hover {
 .organ__avt img {
   width: 100px;
   height: 100px;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
 }
 
 .organ__sub-name {
@@ -2196,7 +2218,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Oswald";
-  margin-top: -20px;
+  margin-top: 10px;
   margin-bottom: 25px;
 }
 
@@ -2437,6 +2459,7 @@ a:hover {
   margin-top: -12px;
   cursor: pointer;
   position: relative;
+  margin-top: 10px;
 }
 
 .product1__item h3:after {
@@ -2967,8 +2990,8 @@ a:hover {
 
 .invest__list li {
   text-transform: uppercase;
-  padding: 5px 0px;
-  font-weight: 400;
+  padding: 10px 0px;
+  font-weight: bold;
 }
 
 .invest__list li:not(:last-child) {
@@ -3201,9 +3224,15 @@ a:hover {
 }
 
 .contact__brand {
+  font-size: 200px;
+  font-family: "Oswald";
+  color: #05406D;
+  text-transform: uppercase;
+  opacity: 5%;
+  font-weight: bold;
   position: absolute;
-  top: 1%;
-  left: 12%;
+  top: 6%;
+  left: 13.5%;
   z-index: 2;
 }
 

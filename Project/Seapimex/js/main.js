@@ -38,6 +38,10 @@ $(function(){
 		$('.header__nav').toggleClass('open');
 		$(this).toggleClass('active');
 	})
+	$('.header__nav').click(function(){
+		$(this).toggleClass('open');
+		$(".mobile-menu-btn").toggleClass('active');
+	})
     $(".history-btn").click(function(){
 		$('.history__list').toggleClass('open');
 		$(this).toggleClass('active');
