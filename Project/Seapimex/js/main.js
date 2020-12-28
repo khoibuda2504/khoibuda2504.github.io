@@ -36,10 +36,12 @@ $(function() {
 $(function(){
     $(".mobile-menu-btn").click(function(){
 		$('.header__nav').toggleClass('open');
+		$('.header__overlay').toggleClass('open');
 		$(this).toggleClass('active');
 	})
-	$('.header__nav').click(function(){
+	$('.header__overlay').click(function(){
 		$(this).toggleClass('open');
+		$('.header__nav').toggleClass('open');
 		$(".mobile-menu-btn").toggleClass('active');
 	})
     $(".history-btn").click(function(){
