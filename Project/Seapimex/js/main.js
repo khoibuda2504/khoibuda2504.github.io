@@ -75,6 +75,24 @@ $(function(){
 		  el: '.swiper-scrollbar',
 		},
 	  })
+	
+	var swiperV = new Swiper('.swiper-container-v', {
+		pagination: '.swiper-pagination-v',
+		speed: 1500,
+		loop: true,
+		autoplay: {
+			delay: 1500,
+		},
+		direction: 'vertical',
+		//effect: 'cube',
+		thumbs: {
+			swiper: {
+			  el: '.swiper-container-thumbs',
+			  slidesPerView: 5,
+			}
+		  }
+	});
+	
 })
 
 
@@ -124,4 +142,81 @@ $(function(){
 			tabs.find(tab_id).addClass('current');
 		})
 	})
+	$(".product-wrapper").each(function(){
+		var tabs = $(this);
+		tabs.find(".product-L__card").first().addClass("current");
+		tabs.find(".product-R__cards").first().addClass("current");
+		tabs.find(".product-L__card").click(function(){
+			var tab_id = $(this).attr('data-tab');
+			if (tab_id === "#domestic") {
+				$('#change1').attr('src','./images/change1.png');
+				$('#change2').attr('src','./images/home-L-icon2.png');
+			}
+			if (tab_id === "#export") {
+				$('#change2').attr('src','./images/change2.png');
+				$('#change1').attr('src','./images/home-L-icon1.png')
+			}
+			tabs.find(".product-L__card").removeClass("current");
+			tabs.find(".product-R__cards").removeClass("current");
+			$(this).addClass('current');
+			tabs.find(tab_id).addClass('current');
+		})
+	})
+	$(".product-R").each(function(){
+		var tabs = $(this);
+		tabs.find(".product__list li").first().addClass("current");
+		tabs.find(".product-R__cards").first().addClass("current");
+		tabs.find(".product__list li").click(function(){
+			var tab_id = $(this).attr('data-tab');
+			tabs.find(".product__list li").removeClass("current");
+			tabs.find(".product-R__cards").removeClass("current");
+			$(this).addClass('current');
+			tabs.find(tab_id).addClass('current');
+		})
+	})
+	$(".branch").each(function(){
+		var tabs = $(this);
+		tabs.find(".product-L__card").first().addClass("current");
+		tabs.find(".branch-R").first().addClass("current");
+		tabs.find(".product-L__card").click(function(){
+			var tab_id = $(this).attr('data-tab');
+			if (tab_id === "#bentre") {
+				$('#change3').attr('src','./images/group1-about.png');
+				$('#change4').attr('src','./images/group2-about.png');
+			}
+			if (tab_id === "#hanoi") {
+				$('#change4').attr('src','./images/v2.png');
+				$('#change3').attr('src','./images/v1.png')
+			}
+			tabs.find(".product-L__card").removeClass("current");
+			tabs.find(".branch-R").removeClass("current");
+			$(this).addClass('current');
+			tabs.find(tab_id).addClass('current');
+		})
+	})
+	$(".organ").each(function(){
+		var tabs = $(this);
+		tabs.find(".organ__card").first().addClass("current");
+		tabs.find(".organ__custom").first().addClass("current");
+		tabs.find(".organ__card").click(function(){
+			var tab_id = $(this).attr('data-tab');
+			tabs.find(".organ__card").removeClass("current");
+			tabs.find(".organ__custom").removeClass("current");
+			$(this).addClass('current');
+			tabs.find(tab_id).addClass('current');
+		})
+	})
+	$(".history").each(function(){
+		var tabs = $(this);
+		tabs.find(".history__list li").first().addClass("current");
+		tabs.find(".history__inner").first().addClass("current");
+		tabs.find(".history__list li").click(function(){
+			var tab_id = $(this).attr('data-tab');
+			tabs.find(".history__list li").removeClass("current");
+			tabs.find(".history__inner").removeClass("current");
+			$(this).addClass('current');
+			tabs.find(tab_id).addClass('current');
+		})
+	})
+	
 })

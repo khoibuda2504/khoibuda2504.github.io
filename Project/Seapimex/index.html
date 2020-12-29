@@ -24,7 +24,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <li class="dropdown1">
-                        <a href="product.html">PRODUCTS</a>
+                        <a href="product-batri.html">PRODUCTS</a>
                         <ul>
                             <li class="dropdown2"><a href="#">Option 1</a>
                                 <ul>
@@ -68,7 +68,7 @@
             </div>
         </div>
     </header>
-    <main class="main" id="main">
+    <main class="main page-index" id="main">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -100,7 +100,7 @@
         <div class="container">
             <nav class="product__nav wow fadeIn">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li class="current"><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <li><a href="product.html">PRODUCTS</a></li>
                     <li><a href="distibution.html">DISTRIBUTION CHANNEL</a></li>
@@ -116,10 +116,10 @@
                     <div class="primary-heading wow fadeInUp">
                         OUR PRODUCT
                     </div>
-                    <div class="product-L__card product-L__card--blue wow fadeInUp">
+                    <div data-tab="#domestic" class="product-L__card current wow fadeInUp">
                         <div class="product-L__inner">
                             <div class="product-L__img">
-                                <img src="./images/home-L-icon1.png" alt="">
+                                <img id="change1" src="./images/change1.png" alt="">
                             </div>
                             <div class="product-L__desc product-L__desc--white">
                                 <div class="product-L__sub-title">domestic</div>
@@ -127,10 +127,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-L__card product-L__card--border wow fadeInDown">
+                    <div data-tab="#export" class="product-L__card product-L__card--border wow fadeInDown">
                         <div class="product-L__inner">
                             <div class="product-L__img">
-                                <img src="./images/home-L-icon2.png" alt="">
+                                <img id="change2" src="./images/home-L-icon2.png" alt="">
                             </div>
                             <div class="product-L__desc">
                                 <div class="product-L__sub-title product-L__sub-title--mainColor">export</div>
@@ -138,25 +138,28 @@
                             </div>
                         </div>
                     </div>
-                    <a href="product-batri.html" class="product-L__more wow fadeIn">
+                    <a href="product.html" class="product-L__more wow fadeIn">
                         See all product
                     </a>
                 </div>
                 <div class="product-R">
                     <ul class="product__list">
-                        <li class="active"><a href="#">Recieve</a></li>
-                        <li><a href="#">Canned Fish</a> </li>
-                        <li><a href="#">Canned pork products</a></li>
-                        <li><a href="#">Sausage</a> </li>
-                        <li><a href="#">Frozen seafood</a></li>
-                        <li><a href="#">See all</a></li>
+                        <li data-tab="#l1" class="current"><a href="javascript:;">Recieve</a></li>
+                        <li data-tab="#l2" ><a href="javascript:;">Canned Fish</a> </li>
+                        <li data-tab="#l3" ><a href="javascript:;">Canned pork products</a></li>
+                        <li data-tab="#l4" ><a href="javascript:;">Sausage</a> </li>
+                        <li data-tab="#l5" ><a href="javascript:;">Frozen seafood</a></li>
+                        <li data-tab="#l6" ><a href="javascript:;">See all</a></li>
                     </ul>
-                    <div class="product-R__cards">
+                    <div id="domestic" class="product-R__cards">
                         <div class="columns">
                             <div class="column">
                                 <div class="product-R__card wow fadeInDown">
                                     <div class="product-R__img">
                                         <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                        <div class="add-item">
+                                            <img src="./images/plus.png" alt="" class="plus">
+                                        </div>
                                     </div>
                                     <div class="product-R__title">
                                         <a href="detail.html">Fillet Salmon</a>
@@ -170,6 +173,9 @@
                                 <div class="product-R__card wow fadeInDown">
                                     <div class="product-R__img">
                                         <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                        <div class="add-item">
+                                            <img src="./images/plus.png" alt="" class="plus">
+                                        </div>
                                     </div>
                                     <div class="product-R__title">
                                         <a href="detail.html">Swimming crab meat</a>
@@ -183,6 +189,9 @@
                                 <div class="product-R__card wow fadeInDown">
                                     <div class="product-R__img">
                                         <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                        <div class="add-item">
+                                            <img src="./images/plus.png" alt="" class="plus">
+                                        </div>
                                     </div>
                                     <div class="product-R__title">
                                         <a href="detail.html">Capelin (500gr/pack) </a>
@@ -197,6 +206,9 @@
                                 <div class="product-R__card">
                                     <div class="product-R__img wow fadeInUp">
                                         <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                        <div class="add-item">
+                                            <img src="./images/plus.png" alt="" class="plus">
+                                        </div>
                                     </div>
                                     <div class="product-R__title">
                                         <a href="detail.html">Pork Shaomai</a>
@@ -210,6 +222,9 @@
                                 <div class="product-R__card wow fadeInUp">
                                     <div class="product-R__img">
                                         <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                        <div class="add-item">
+                                            <img src="./images/plus.png" alt="" class="plus">
+                                        </div>
                                     </div>
                                     <div class="product-R__title">
                                         <a href="detail.html">Pork liver paste</a>
@@ -221,6 +236,590 @@
                             </div>
                             <div class="column">
                                 <div class="product-R__card wow fadeInUp">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
+                                        <div class="add-item">
+                                            <img src="./images/plus.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Tuna with vegetables</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id ="export" class="product-R__cards">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Fillet Salmon #</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Swimming crab meat</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Capelin (500gr/pack) </a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork Shaomai</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork liver paste</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Tuna with vegetables</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id ="l1" class="product-R__cards">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Fillet Salmon 1</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Swimming crab meat</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Capelin (500gr/pack) </a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork Shaomai</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork liver paste</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Tuna with vegetables</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id ="l2" class="product-R__cards">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Fillet Salmon 2</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Swimming crab meat</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Capelin (500gr/pack) </a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork Shaomai</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork liver paste</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Tuna with vegetables</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id ="l3" class="product-R__cards">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Fillet Salmon 3</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Swimming crab meat</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Capelin (500gr/pack) </a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork Shaomai</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork liver paste</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Tuna with vegetables</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id ="l4" class="product-R__cards">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Fillet Salmon 4</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Swimming crab meat</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Capelin (500gr/pack) </a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork Shaomai</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork liver paste</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Tuna with vegetables</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id ="l5" class="product-R__cards">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Fillet Salmon 5</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Swimming crab meat</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Capelin (500gr/pack) </a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork Shaomai</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork liver paste</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Tuna with vegetables</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id ="l6" class="product-R__cards">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic1.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Fillet Salmon 6</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic2.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Swimming crab meat</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic3.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Capelin (500gr/pack) </a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic4.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork Shaomai</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
+                                    <div class="product-R__img">
+                                        <a href="detail.html"><img src="./images/home-pic5.png" alt=""></a>
+                                    </div>
+                                    <div class="product-R__title">
+                                        <a href="detail.html">Pork liver paste</a>
+                                    </div>
+                                    <div class="product-R__text">
+                                        Lorem ipsum dolor sit amet, consetetur 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="product-R__card">
                                     <div class="product-R__img">
                                         <a href="detail.html"><img src="./images/home-pic6.png" alt=""></a>
                                     </div>

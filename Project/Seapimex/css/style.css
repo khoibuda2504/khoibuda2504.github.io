@@ -248,7 +248,7 @@ a:hover {
 
 .header {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   width: 100%;
   z-index: 999;
@@ -257,6 +257,11 @@ a:hover {
 .header.fixed {
   position: fixed;
   background-color: #05406D;
+  top: 0;
+}
+
+.header.fixed .header__nav {
+  padding-top: 10px;
 }
 
 .header__fusion {
@@ -430,7 +435,7 @@ a:hover {
 @media screen and (max-width: 991px) {
   .header__nav li.dropdown1 > i {
     color: #05406D;
-    pointer-events: auto;
+    pointer-events: auto !important;
   }
   .header__nav li.dropdown1 > i.arrow1 {
     position: absolute;
@@ -637,7 +642,7 @@ a:hover {
 
 .banner__text {
   position: absolute;
-  top: 40%;
+  top: 44%;
   left: -2%;
   text-transform: uppercase;
   font-family: "Oswald";
@@ -678,7 +683,7 @@ a:hover {
   cursor: pointer;
   position: fixed;
   right: 0;
-  top: 31%;
+  top: 29.5%;
   width: 44px;
   height: 44px;
   z-index: 999;
@@ -802,8 +807,15 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 30px;
   font-weight: bold;
+}
+
+.product__nav li {
+  padding-bottom: 25px;
+}
+
+.product__nav li.current {
+  border-bottom: 3px solid #05406D;
 }
 
 .product-wrapper {
@@ -844,10 +856,14 @@ a:hover {
   }
 }
 
-.product-L__card--blue {
+.product-L__card.current {
   background: #05406D;
   -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
           box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+.product-L__card.current .product-L__sub-title, .product-L__card.current .product-L__text {
+  color: #ffffff;
 }
 
 .product-L__card--border {
@@ -883,21 +899,10 @@ a:hover {
   padding-left: 20px;
 }
 
-.product-L__desc--bold {
-  font-weight: bold;
-}
-
-.product-L__desc--white {
-  color: #ffffff;
-}
-
 .product-L__sub-title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-}
-
-.product-L__sub-title--mainColor {
   color: #05406D;
 }
 
@@ -940,14 +945,14 @@ a:hover {
 .product__list li {
   display: inline-block;
   padding: 0px 10px;
-}
-
-.product__list li.active, .product__list li:hover {
-  border-bottom: 2px solid #05406D;
   padding-top: 2px;
 }
 
-.product__list li.active a, .product__list li:hover a {
+.product__list li.current, .product__list li:hover {
+  border-bottom: 2px solid #05406D;
+}
+
+.product__list li.current a, .product__list li:hover a {
   color: #05406D;
   font-weight: bold;
 }
@@ -967,6 +972,11 @@ a:hover {
 
 .product-R__cards {
   padding-top: 35px;
+  display: none;
+}
+
+.product-R__cards.current {
+  display: block;
 }
 
 .product-R__cards .column {
@@ -995,16 +1005,31 @@ a:hover {
   left: 0;
 }
 
-.product-R__img img {
+.product-R__img > a > img {
   width: 100%;
   height: auto;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  position: relative;
+  z-index: 1;
 }
 
-.product-R__img img:hover {
+.product-R__img > a > img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.product-R__img:hover .add-item {
+  display: block;
+}
+
+.product-R__img .add-item {
+  cursor: pointer;
+  top: 80%;
+  position: absolute;
+  z-index: 1;
+  left: -8%;
+  display: none;
 }
 
 .product-R__title {
@@ -1705,7 +1730,7 @@ a:hover {
   .history__list {
     position: fixed;
     top: 0;
-    width: 20%;
+    width: 30%;
     height: 100%;
     background: white;
     right: -100%;
@@ -1727,11 +1752,11 @@ a:hover {
   font-weight: bold;
 }
 
-.history__list li.active, .history__list li:hover {
+.history__list li.current, .history__list li:hover {
   border-bottom: 2px solid #05406D;
 }
 
-.history__list li.active a, .history__list li:hover a {
+.history__list li.current a, .history__list li:hover a {
   color: #05406D;
 }
 
@@ -1749,11 +1774,15 @@ a:hover {
 
 .history__inner {
   padding-top: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+}
+
+.history__inner.current {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .history-L {
@@ -1833,8 +1862,8 @@ a:hover {
   background-repeat: no-repeat;
   position: relative;
   color: #ffffff;
-  padding-top: 200px;
-  padding-bottom: 170px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2191,7 +2220,7 @@ a:hover {
   height: 100%;
 }
 
-.organ__card:hover {
+.organ__card:hover, .organ__card.current {
   color: white;
   background-color: #188EFA !important;
 }
@@ -2996,7 +3025,7 @@ a:hover {
 
 .distri {
   background: #F2F5F7;
-  padding-top: 140px;
+  padding-top: 120px;
   padding-bottom: 80px;
   position: relative;
 }
@@ -3134,17 +3163,20 @@ a:hover {
 
 .invest__img {
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .invest__img img {
   display: block;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  width: 100%;
 }
 
 .invest__img img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .invest__content {
@@ -3218,10 +3250,9 @@ a:hover {
 }
 
 .invest1__content-R {
-  width: 95%;
+  width: 92%;
   font-style: italic;
   color: #05406D;
-  font-weight: bold;
 }
 
 .invest1__content .row {
@@ -3244,8 +3275,14 @@ a:hover {
 }
 
 .invest1__quote {
-  width: 5%;
-  line-height: 5%;
+  width: 8%;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .invest1__quote {
+    padding-left: 0px;
+  }
 }
 
 .invest1__desc--border {
@@ -3570,4 +3607,100 @@ a:hover {
     font-size: 120px;
     bottom: -7.5%;
   }
+}
+
+#vertical .swiper-container-v {
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+
+#vertical .swiper-slide {
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Oswald";
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  opacity: 0.5;
+  width: 170px !important;
+}
+
+#vertical .swiper-slide > div {
+  padding: 35px 0px;
+}
+
+#vertical .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+#vertical .swiper-wrapper::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  left: -50%;
+}
+
+#vertical .swiper-wrapper::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  right: -40%;
+}
+
+#vertical .swiper-container-thumbs {
+  width: 53%;
+}
+
+@media screen and (max-width: 500px) {
+  #vertical .swiper-container-thumbs {
+    width: 38%;
+  }
+}
+
+#content .swiper-container-v {
+  overflow: hidden;
+  height: 400px;
+}
+
+#content .dev__content {
+  padding-top: 100px;
+}
+
+.swiper-slide-thumb-active {
+  opacity: 1 !important;
+}
+
+.page-about .product-L__card.current .product-L__desc {
+  color: white;
+}
+
+.page-about .product-L__desc {
+  font-weight: bold;
+  color: #05406D;
+}
+
+.page-about .branch-R, .page-about .organ__custom {
+  display: none;
+}
+
+.page-about .branch-R.current, .page-about .organ__custom.current {
+  display: block;
+}
+
+.page-about .branch-L .primary-heading {
+  padding-bottom: 25px;
 }
