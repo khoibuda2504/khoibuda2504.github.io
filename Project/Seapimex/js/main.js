@@ -46,7 +46,13 @@ $(function(){
 	})
     $(".history-btn").click(function(){
 		$('.history__list').toggleClass('open');
+		$('.history__overlay').toggleClass('open');
 		$(this).toggleClass('active');
+	})
+    $(".history__overlay").click(function(){
+		$('.history__list').toggleClass('open');
+		$('.history-btn').toggleClass('active');
+		$(this).toggleClass('open');
 	})
 	$('.banner__slide').click(function() {
 		$('.banner__tag').toggleClass('slide');
