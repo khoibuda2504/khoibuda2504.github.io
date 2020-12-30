@@ -500,6 +500,7 @@ a:hover {
 
 .header__nav li.dropdown2 > i {
   pointer-events: none;
+  padding-right: 5px;
 }
 
 @media screen and (max-width: 991px) {

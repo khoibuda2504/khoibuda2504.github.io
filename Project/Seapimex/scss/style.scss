@@ -217,6 +217,7 @@ display: flex;
                 }
                 > i {
                     pointer-events: none;
+                    padding-right: 5px;
                     @include media (991px) {
                         pointer-events: auto;
                         transform: rotate(90deg);
