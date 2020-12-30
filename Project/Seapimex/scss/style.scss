@@ -887,6 +887,12 @@ display: flex;
             .column:nth-child(5) {
                 order: 5
             }
+            @include media(340px) {
+                margin-left: -10px;
+            }
+            @include media(320px) {
+                margin-left: -20px;
+            }
         }
         .column {
             width: 100%/12*2;
@@ -895,17 +901,16 @@ display: flex;
             }
             @include media(768px) {
                 width: 50%;
-                margin-left: -30px;
             }
             &:nth-child(3) {
                 width: 100%/12*4;
                 @include media(991px) {
                     width: 100%;
-                    margin-left: -60px;
+                    margin-left: 0px
                 }
-            }
-            &:nth-child(2), &:nth-child(5) {
-                margin-left: 0px;
+                @include media(424px) {
+                    margin-left: -30px;
+                }
             }
         }
     }

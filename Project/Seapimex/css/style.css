@@ -1434,6 +1434,18 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 991px) and (max-width: 340px) {
+  .exp__content {
+    margin-left: -10px;
+  }
+}
+
+@media screen and (max-width: 991px) and (max-width: 320px) {
+  .exp__content {
+    margin-left: -20px;
+  }
+}
+
 .exp__content .column {
   width: 16.66667%;
 }
@@ -1447,7 +1459,6 @@ a:hover {
 @media screen and (max-width: 768px) {
   .exp__content .column {
     width: 50%;
-    margin-left: -30px;
   }
 }
 
@@ -1458,12 +1469,14 @@ a:hover {
 @media screen and (max-width: 991px) {
   .exp__content .column:nth-child(3) {
     width: 100%;
-    margin-left: -60px;
+    margin-left: 0px;
   }
 }
 
-.exp__content .column:nth-child(2), .exp__content .column:nth-child(5) {
-  margin-left: 0px;
+@media screen and (max-width: 424px) {
+  .exp__content .column:nth-child(3) {
+    margin-left: -30px;
+  }
 }
 
 .exp__white {
