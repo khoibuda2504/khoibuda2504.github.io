@@ -96,7 +96,7 @@ $(function(){
 			  el: '.swiper-container-thumbs',
 			  slidesPerView: 5,
 			}
-		  }
+		}
 	});
 	
 })

@@ -1644,6 +1644,10 @@ display: flex;
                 &:nth-child(2), &:last-child {
                     width: 50%;
                     padding-left: 0;
+                    @include media(468px) {
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
             }
         }
