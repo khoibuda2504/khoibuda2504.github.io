@@ -252,6 +252,9 @@ display: flex;
             font-weight: bold;
             &:hover {
                 color: $lightBlueColor;
+                & + i.arrow1 {
+                    color: $lightBlueColor!important;
+                }
             }
             @include media(991px) {
                 color: $blueColor!important;

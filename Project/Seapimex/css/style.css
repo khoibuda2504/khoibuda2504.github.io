@@ -544,6 +544,10 @@ a:hover {
   color: #188EFA;
 }
 
+.header__nav a:hover + i.arrow1 {
+  color: #188EFA !important;
+}
+
 @media screen and (max-width: 991px) {
   .header__nav a {
     color: #05406D !important;
