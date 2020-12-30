@@ -2546,6 +2546,9 @@ display: flex;
         text-align: center;
         opacity: 0.5;
         width: 170px!important;
+        @include media(320px) {
+            font-size: 20px;
+        }
         & > div {
         padding: 35px 0px;
         }
@@ -2577,6 +2580,9 @@ display: flex;
         width: 53%;
         @include media(500px) {
             width: 38%;
+        }
+        @include media(320px) {
+            width: 60%;
         }
     }
 }

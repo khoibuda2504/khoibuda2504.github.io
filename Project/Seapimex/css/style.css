@@ -3684,6 +3684,12 @@ a:hover {
   width: 170px !important;
 }
 
+@media screen and (max-width: 320px) {
+  #vertical .swiper-slide {
+    font-size: 20px;
+  }
+}
+
 #vertical .swiper-slide > div {
   padding: 35px 0px;
 }
@@ -3726,6 +3732,12 @@ a:hover {
 @media screen and (max-width: 500px) {
   #vertical .swiper-container-thumbs {
     width: 38%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #vertical .swiper-container-thumbs {
+    width: 60%;
   }
 }
 
