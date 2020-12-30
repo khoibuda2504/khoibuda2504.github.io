@@ -1290,8 +1290,18 @@ a:hover {
   font-weight: bold;
 }
 
-.export__areas .column {
-  width: 50%;
+.export__areas .column:first-child {
+  width: 60%;
+}
+
+.export__areas .column:last-child {
+  width: 40%;
+}
+
+@media screen and (max-width: 390px) {
+  .export__areas .column {
+    width: 100% !important;
+  }
 }
 
 .export__areas .row {
