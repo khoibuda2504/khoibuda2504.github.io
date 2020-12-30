@@ -2399,6 +2399,15 @@ a:hover {
   text-transform: uppercase;
   color: #188EFA;
   padding: 15px 49px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.organ__more a:hover {
+  color: white;
+  background: #05406D;
 }
 
 .branch {

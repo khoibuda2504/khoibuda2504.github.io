@@ -1593,9 +1593,16 @@ display: flex;
             text-transform: uppercase;
             color: $lightBlueColor;
             padding: 15px 49px;
+            position: relative;
+            z-index: 1;
+            transition: 0.5s;
+            &:hover {
+                color: white;
+                background: $blueColor;
+                }
+            }
         }
     }
-}
 .branch {
     @include background('../images/branch-bg.png');
     padding-bottom: 365px;
