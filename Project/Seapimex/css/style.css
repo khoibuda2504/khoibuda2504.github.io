@@ -512,6 +512,7 @@ a:hover {
     margin-right: 8px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    padding-right: 0px;
   }
   .header__nav li.dropdown2 > i.arrow2 {
     position: absolute;
