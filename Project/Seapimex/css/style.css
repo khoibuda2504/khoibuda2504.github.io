@@ -989,6 +989,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .product-R__cards .column {
+    width: 100%;
+  }
+}
+
 .product-R__card {
   height: 100%;
 }
@@ -1427,6 +1433,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .exp__content .column {
     width: 50%;
+    margin-left: -30px;
   }
 }
 
@@ -1437,7 +1444,12 @@ a:hover {
 @media screen and (max-width: 991px) {
   .exp__content .column:nth-child(3) {
     width: 100%;
+    margin-left: -60px;
   }
+}
+
+.exp__content .column:nth-child(2), .exp__content .column:nth-child(5) {
+  margin-left: 0px;
 }
 
 .exp__white {
@@ -2572,6 +2584,12 @@ a:hover {
 @media screen and (max-width: 500px) {
   .product1__items .column {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .product1__items .column {
+    width: 100%;
   }
 }
 
