@@ -1076,10 +1076,9 @@ display: flex;
         border-top: 1px solid rgba(255,255,255,0.2);
         border-bottom: 1px solid rgba(255,255,255,0.2);
         font-weight: bold;
-        @include media(991px) {
-            display: flex;
-            flex-wrap: wrap;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         li {
             display: inline-block;
             margin: 0 15px;
