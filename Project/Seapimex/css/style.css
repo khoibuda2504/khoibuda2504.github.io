@@ -674,6 +674,7 @@ a:hover {
           flex-direction: column;
   z-index: 1;
   background-color: #ffffff;
+  border-top-left-radius: 11px;
   border-bottom-left-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -682,17 +683,12 @@ a:hover {
 .banner__tag.slide {
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
-  opacity: 0;
 }
 
 .banner__slide {
   cursor: pointer;
-  position: fixed;
-  right: 0;
-  top: 29.5%;
   width: 44px;
   height: 44px;
-  z-index: 999;
   background-color: #05406D;
   border-top-left-radius: 10px;
   display: -webkit-box;
@@ -704,8 +700,8 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.35s linear;
-  transition: 0.35s linear;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .banner__slide i {
@@ -720,9 +716,9 @@ a:hover {
 }
 
 .banner__slide.slide {
-  -webkit-transform: translateX(15px);
-          transform: translateX(15px);
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 9px;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
 }
 
 .banner__language {
