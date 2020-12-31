@@ -2765,7 +2765,7 @@ a:hover {
   transition: 0.7s;
 }
 
-.product1__pagination li:hover {
+.product1__pagination li:hover, .product1__pagination li.current {
   width: 40px;
   height: 40px;
   border-radius: 50%;

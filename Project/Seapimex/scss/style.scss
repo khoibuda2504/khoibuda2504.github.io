@@ -1859,7 +1859,7 @@ display: flex;
             background: transparent;
             line-height: 40px;
             transition: 0.7s;
-            &:hover {
+            &:hover, &.current {
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
