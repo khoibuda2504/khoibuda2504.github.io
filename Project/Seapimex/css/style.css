@@ -964,14 +964,45 @@ a:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .product__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .product__list li {
   display: inline-block;
   padding: 0px 10px;
   padding-top: 2px;
+  position: relative;
 }
 
-.product__list li.current, .product__list li:hover {
-  border-bottom: 2px solid #05406D;
+@media screen and (max-width: 768px) {
+  .product__list li {
+    width: 50%;
+    padding: 5px 10px;
+  }
+}
+
+.product__list li::before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 83px;
+  background-color: #05406D;
+  display: none;
+}
+
+.product__list li.current::before, .product__list li:hover::before {
+  display: block;
 }
 
 .product__list li.current a, .product__list li:hover a {
