@@ -366,6 +366,7 @@ display: flex;
             font-size: 24px;
             color: $whiteColor;
             text-align: center;
+            transition: 1ms;
             &.active {
                 transform: translateX(-7px) rotateY(180deg)
             }

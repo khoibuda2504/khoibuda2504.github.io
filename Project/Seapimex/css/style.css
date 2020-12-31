@@ -708,6 +708,8 @@ a:hover {
   font-size: 24px;
   color: #ffffff;
   text-align: center;
+  -webkit-transition: 1ms;
+  transition: 1ms;
 }
 
 .banner__slide i.active {
