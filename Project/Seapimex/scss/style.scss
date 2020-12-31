@@ -1541,6 +1541,7 @@ display: flex;
         font-family: $font;
         text-transform: uppercase;
         color: black;
+        padding-right: 35px;
         @include media(768px) {
             width: 100%;
         }
