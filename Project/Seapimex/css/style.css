@@ -2427,7 +2427,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .branch .product-L__card {
-    height: 100%;
+    height: 60%;
   }
 }
 
@@ -2463,7 +2463,7 @@ a:hover {
   .branch-R {
     width: 100%;
     margin-left: 0px;
-    margin-top: 70px;
+    margin-top: 15px;
   }
 }
 
@@ -2540,9 +2540,22 @@ a:hover {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .branch__icon {
+    width: 5%;
+    margin-right: 0px;
+  }
+}
+
 .branch__text {
   width: 90%;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .branch__text {
+    width: 95%;
+  }
 }
 
 .branch__circle {
