@@ -817,11 +817,29 @@ a:hover {
 }
 
 .product__nav li {
+  position: relative;
   padding-bottom: 25px;
 }
 
-.product__nav li.current {
-  border-bottom: 3px solid #05406D;
+.product__nav li::before {
+  position: absolute;
+  height: 2px;
+  width: 73px;
+  background-color: #05406D;
+  content: '';
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+.product__nav li:nth-child(5)::before {
+  display: none !important;
+}
+
+.product__nav li.current::before, .product__nav li:hover::before {
+  display: block;
 }
 
 .product-wrapper {

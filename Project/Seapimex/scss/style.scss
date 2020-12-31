@@ -432,9 +432,28 @@ display: flex;
             font-weight: bold;
         }
         li {
+            position: relative;
             padding-bottom: 25px;
-            &.current {
-                border-bottom: 3px solid $blueColor;
+            &::before {
+                position: absolute;
+                height: 2px;
+                width: 73px;
+                background-color: $blueColor;
+                content: '';
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+            }
+            &:nth-child(5) {
+                &::before {
+                    display: none!important;
+                }
+            }
+            &.current, &:hover {
+                &::before {
+                    display: block;
+                }
             }
 
         }
