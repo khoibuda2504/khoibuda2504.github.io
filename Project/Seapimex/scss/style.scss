@@ -1053,8 +1053,8 @@ display: flex;
     &__list {
         margin-top: 30px;
         padding: 30px 0px;
-        border-top: 1px solid $whiteColor;
-        border-bottom: 1px solid $whiteColor;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
         font-weight: bold;
         li {
             display: inline-block;
