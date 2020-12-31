@@ -1645,7 +1645,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 170px;
+  padding-bottom: 145px;
   padding-top: 160px;
   color: #ffffff;
   text-align: center;
@@ -1690,9 +1690,27 @@ a:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 991px) {
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .footer__list li {
   display: inline-block;
   margin: 0 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer__list li {
+    width: 50%;
+    margin: 0;
+    padding-bottom: 10px;
+  }
 }
 
 .footer__list li a:hover {
