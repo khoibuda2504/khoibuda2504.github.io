@@ -296,11 +296,11 @@ a:hover {
   width: 100%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav {
     position: fixed;
     left: -100%;
-    width: 25%;
+    width: 15%;
     top: -4%;
     height: 120%;
     -webkit-transition: 0.1s;
@@ -325,7 +325,7 @@ a:hover {
           align-items: center;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav > ul {
     display: block;
     width: 250px;
@@ -338,7 +338,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -351,7 +351,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.show {
     display: block;
     text-align: center;
@@ -362,7 +362,7 @@ a:hover {
   margin: 0px 77px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.hide {
     display: none;
   }
@@ -379,7 +379,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.dropdown1 > ul {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -399,7 +399,7 @@ a:hover {
           animation: fadeInLeft 0.5s;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.dropdown1:hover > ul {
     display: none;
   }
@@ -432,7 +432,7 @@ a:hover {
   pointer-events: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.dropdown1 > i {
     color: #05406D;
     pointer-events: auto !important;
@@ -457,7 +457,7 @@ a:hover {
   position: relative;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.dropdown2 {
     position: static;
   }
@@ -476,7 +476,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.dropdown2 > ul {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -503,7 +503,7 @@ a:hover {
   padding-right: 5px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav li.dropdown2 > i {
     pointer-events: auto;
     -webkit-transform: rotate(90deg);
@@ -550,7 +550,7 @@ a:hover {
   color: #188EFA !important;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .header__nav a {
     color: #05406D !important;
   }
@@ -562,7 +562,7 @@ a:hover {
   margin-left: auto;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1110px) {
   .hamburger-btn {
     display: none;
   }

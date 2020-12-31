@@ -69,10 +69,10 @@ display: flex;
     }
     &__nav {
         width: 100%;
-        @include media(991px) {
+        @include media(1110px) {
             position: fixed;
             left: -100%; 
-            width: 25%;
+            width: 15%;
             top: -4%;
             height: 120%;
             transition: 0.1s;
@@ -83,7 +83,7 @@ display: flex;
             }
         }
         > ul {
-            @include media(991px) {
+            @include media(1110px) {
                 display: block;
                 width: 250px;
                 height: 105vh;
@@ -98,7 +98,7 @@ display: flex;
             align-items: center;
         }
         li {
-            @include media(991px) {
+            @include media(1110px) {
                 padding-top: 15px;
                 padding-bottom: 15px;
                 padding-left: 5px;
@@ -106,14 +106,14 @@ display: flex;
             }
             &.show {
                 display: none;
-                @include media(991px) {
+                @include media(1110px) {
                     display: block;
                     text-align: center;
                 }
             }
             &.hide {
                 margin: 0px 77px;
-                @include media(991px) {
+                @include media(1110px) {
                     display: none;
                 }
             }
@@ -126,7 +126,7 @@ display: flex;
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                     z-index: 1;
                     display: none;
-                    @include media(991px) {
+                    @include media(1110px) {
                         box-shadow: none;
                         background-color: transparent
                     }
@@ -140,7 +140,7 @@ display: flex;
                     > ul {
                         display: block;
                         animation: fadeInLeft 0.5s;
-                        @include media(991px) {
+                        @include media(1110px) {
                             display: none;
                         }
                     } }
@@ -167,7 +167,7 @@ display: flex;
                     &:active {
                         pointer-events: none;
                     }
-                    @include media(991px) {
+                    @include media(1110px) {
                         color: $mainColor;
                         pointer-events: auto!important;
                         &.arrow1 {
@@ -187,7 +187,7 @@ display: flex;
             }
             &.dropdown2 {
                 position: relative;
-                @include media(991px) {
+                @include media(1110px) {
                     position: static;
                 }
                 > ul {
@@ -200,7 +200,7 @@ display: flex;
                     background-color: #fff;
                     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                     display: none;
-                    @include media(991px) {
+                    @include media(1110px) {
                         box-shadow: none;
                         background-color: transparent
                     }
@@ -218,7 +218,7 @@ display: flex;
                 > i {
                     pointer-events: none;
                     padding-right: 5px;
-                    @include media (991px) {
+                    @include media (1110px) {
                         pointer-events: auto;
                         transform: rotate(90deg);
                         margin-top: 10px;
@@ -258,7 +258,7 @@ display: flex;
                     color: $lightBlueColor!important;
                 }
             }
-            @include media(991px) {
+            @include media(1110px) {
                 color: $blueColor!important;
             }
         }
@@ -270,7 +270,7 @@ display: flex;
     margin-left: auto;
 }
 .hamburger-btn {
-    @media screen and (min-width: 991px) {
+    @media screen and (min-width: 1110px) {
         display: none;
     }
     .bar {
