@@ -1356,6 +1356,10 @@ a:hover {
   text-align: center;
 }
 
+.certi__list {
+  text-align: center;
+}
+
 .certi__list img {
   display: inline-block;
   margin-left: 20px;
