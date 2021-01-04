@@ -1,0 +1,49 @@
+$mainColor: #05406D;
+$blueColor: #05406D;
+$lightBlueColor: #188EFA;
+$mainLightColor: #C9923B;
+$gradient: linear-gradient(
+    90deg,
+     #c9933b 0%,
+     #d2a259 53%,
+     #dab177 100%);
+$greyColor: #e1e1e1;
+$greyText: #666666;
+$blackColor: #000;
+$backGroundGrey: #f8f8f8;
+$whiteColor: #ffffff;
+$textColor: #616263;
+$chColor: #E00543;
+$ccColor: #2EB872;
+$font: 'Oswald';
+@mixin media($point) {
+	@media screen and (max-width: $point) {
+		@content;
+	}
+}
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@mixin background($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin line-clamp($line, $height: auto) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: $line;
+	height: $height;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
