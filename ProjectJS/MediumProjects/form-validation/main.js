@@ -3,7 +3,7 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
-
+let point = 0;
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -36,8 +36,7 @@ function checkInputs() {
         setErrorFor(password, 'Password must contain 8 letters');
         password.value = '';
         password2.value = '';
-        alert('Password must contain 8 letters')
-        setTimeout(() => {location.reload()},2000)
+        setTimeout(() => location.reload(),2500)
     } else {
         setSuccessFor(password)
     }
@@ -51,7 +50,11 @@ function checkInputs() {
         setSuccessFor(password2)
     }
 
+    if (point === 4) {
+        alert('Create account success')
+    }
 }
+
 function setErrorFor(input, message) {
     const formControl = input.parentElement //.form-control
     const small = formControl.querySelector('small');
@@ -63,8 +66,34 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.classList.add('success');
+    point++;
 }
 function isEmail(email) {
     return /^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/gm.test(email)
 }
 
+password2.addEventListener('focus', () => {
+    const parent = password2.parentElement;
+    if(parent.classList.contains('error')) {
+        parent.classList.remove('error')
+    }
+})
+username.addEventListener('focus', () => {
+    const parent = username.parentElement;
+    if(parent.classList.contains('error')) {
+        parent.classList.remove('error')
+    }
+})
+email.addEventListener('focus', () => {
+    const parent = email.parentElement;
+    console.log(parent.classList);
+    if(parent.classList.contains('error')) {
+        parent.classList.remove('error')
+    }
+})
+password.addEventListener('focus', () => {
+    const parent = password.parentElement;
+    if(parent.classList.contains('error')) {
+        parent.classList.remove('error')
+    }
+})
