@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "hoc node",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "type": "module",
+  "author": "dangkhoi",
+  "license": "ISC",
+  "dependencies": {
+    "immer": "^9.0.2",
+    "immutable": "^4.0.0-rc.12",
+    "node-persist": "^3.1.0",
+    "yargs": "^16.2.0"
+  }
+}
